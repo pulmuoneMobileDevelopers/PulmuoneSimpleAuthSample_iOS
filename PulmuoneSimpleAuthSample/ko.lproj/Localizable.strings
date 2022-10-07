@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  PulmuoneSimpleAuthSample
+
+  Created by 이주한 on 2022/09/30.
+  
+*/
+"SimpleAuthReset" = "간편인증 재설정";
+"PlzSelectAuthMethod" = "인증 방식을 선택하세요.";
+"PINNumber" = "간편번호인증";
+"BioAuth" = "생체인증";
+"PlzEnterRegiPin" = "간편비밀번호를 입력하세요.";
+"PlzEnterNewPin" = "새로운 간편비밀번호를 입력하세요.";
+"PlzEnterAgain" = "한 번 더 입력해주세요.";
+"PINNotMatch" = "간편비밀번호가 일치하지 않습니다.";
+"AuthComplete" = "인증이 완료되었습니다.";
+"AuthFailed" = "인증에 실패하였습니다.";
+"PINNumberSet" = "간편비밀번호가 설정되었습니다.";
+"FailedPINNumberCount" = "간편번호가 일치하지 않습니다. (%d/%d)";
+"PlzAuthBioInfo" = "생체인증을 진행합니다.";
+"DeviceNotEnrolled" = "기기에 등록된 생체인증 정보가 없습니다. 생체인증 등록을 위해 설정으로 이동하시겠습니까?";
+"DeviceLockOut" = "생체인증 시도한 실패 횟수가 너무 많아 생체인증을 사용할 수 없습니다.";
+"DeviceNotAvailable" = "기기에서 생체 인식을 사용할 수 없습니다.";
+"DeviceNotSupported" = "생체인증을 지원하지 않는 기기입니다.";
+"AppBioNotRegister" = "앱에 등록된 생체인증 정보가 없습니다. 앱에 생체인증 등록 후 이용해 주세요.";
+"ExistBiometrics" = "이미 등록된 생체인증 정보가 존재합니다.";
+"Clear" = "초기화";
+"Cancel" = "취소";
+"Confirm" = "확인";

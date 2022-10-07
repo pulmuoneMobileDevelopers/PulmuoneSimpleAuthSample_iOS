@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3929ABE1B5FB54F0E31E63B /* Pods_PulmuoneSimpleAuthSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8682959475DA29EB3F93D /* Pods_PulmuoneSimpleAuthSampleTests.framework */; };
+		C13057DA28ED71DE000AA515 /* PermissionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057BE28ED71DE000AA515 /* PermissionContentView.swift */; };
+		C13057DB28ED71DE000AA515 /* PulmuonePermissionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057BF28ED71DE000AA515 /* PulmuonePermissionApp.swift */; };
+		C13057DC28ED71DE000AA515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13057C028ED71DE000AA515 /* Assets.xcassets */; };
+		C13057DD28ED71DE000AA515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13057C228ED71DE000AA515 /* Preview Assets.xcassets */; };
+		C13057DE28ED71DE000AA515 /* PopupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C328ED71DE000AA515 /* PopupState.swift */; };
+		C13057DF28ED71DE000AA515 /* PermissionNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C528ED71DE000AA515 /* PermissionNotice.swift */; };
+		C13057E028ED71DE000AA515 /* PermissionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C628ED71DE000AA515 /* PermissionLocation.swift */; };
+		C13057E128ED71DE000AA515 /* PermissionPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C728ED71DE000AA515 /* PermissionPhotoLibrary.swift */; };
+		C13057E228ED71DE000AA515 /* PermissionContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C828ED71DE000AA515 /* PermissionContacts.swift */; };
+		C13057E328ED71DE000AA515 /* PermissionHealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C928ED71DE000AA515 /* PermissionHealthKit.swift */; };
+		C13057E428ED71DE000AA515 /* PermissionCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057CA28ED71DE000AA515 /* PermissionCamera.swift */; };
+		C13057E528ED71DE000AA515 /* PermissionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057CB28ED71DE000AA515 /* PermissionRecord.swift */; };
+		C13057E628ED71DE000AA515 /* PermissionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057CC28ED71DE000AA515 /* PermissionCalendar.swift */; };
+		C13057E728ED71DE000AA515 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057CE28ED71DE000AA515 /* Extensions.swift */; };
+		C13057E828ED71DE000AA515 /* UIScrollViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057CF28ED71DE000AA515 /* UIScrollViewWrapper.swift */; };
+		C13057E928ED71DE000AA515 /* pmo_strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = C13057D028ED71DE000AA515 /* pmo_strings.strings */; };
+		C13057EA28ED71DE000AA515 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D128ED71DE000AA515 /* PermissionManager.swift */; };
+		C13057EB28ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C13057D328ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf */; };
+		C13057EC28ED71DE000AA515 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D528ED71DE000AA515 /* BlurView.swift */; };
+		C13057ED28ED71DE000AA515 /* PermissionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D628ED71DE000AA515 /* PermissionContent.swift */; };
+		C13057EE28ED71DE000AA515 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D728ED71DE000AA515 /* CustomCorner.swift */; };
+		C13057EF28ED71DE000AA515 /* PermissionPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D828ED71DE000AA515 /* PermissionPopup.swift */; };
+		C13057F028ED71DE000AA515 /* PermissionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D928ED71DE000AA515 /* PermissionItem.swift */; };
 		C14B1C4A28E6AD4C00901CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C4928E6AD4C00901CC0 /* AppDelegate.swift */; };
 		C14B1C4C28E6AD4C00901CC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C4B28E6AD4C00901CC0 /* SceneDelegate.swift */; };
 		C14B1C4E28E6AD4C00901CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C4D28E6AD4C00901CC0 /* ViewController.swift */; };
@@ -16,6 +40,46 @@
 		C14B1C6128E6AD5000901CC0 /* PulmuoneSimpleAuthSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C6028E6AD5000901CC0 /* PulmuoneSimpleAuthSampleTests.swift */; };
 		C14B1C6B28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C6A28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITests.swift */; };
 		C14B1C6D28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C6C28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITestsLaunchTests.swift */; };
+		C14B1C8328E6ADFB00901CC0 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C7A28E6ADFA00901CC0 /* Pretendard-ExtraLight.otf */; };
+		C14B1C8428E6ADFB00901CC0 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C7B28E6ADFA00901CC0 /* Pretendard-ExtraBold.otf */; };
+		C14B1C8528E6ADFB00901CC0 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C7C28E6ADFA00901CC0 /* Pretendard-Bold.otf */; };
+		C14B1C8628E6ADFB00901CC0 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C7D28E6ADFA00901CC0 /* Pretendard-SemiBold.otf */; };
+		C14B1C8728E6ADFB00901CC0 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C7E28E6ADFA00901CC0 /* Pretendard-Medium.otf */; };
+		C14B1C8828E6ADFB00901CC0 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C7F28E6ADFB00901CC0 /* Pretendard-Thin.otf */; };
+		C14B1C8928E6ADFB00901CC0 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C8028E6ADFB00901CC0 /* Pretendard-Black.otf */; };
+		C14B1C8A28E6ADFB00901CC0 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C8128E6ADFB00901CC0 /* Pretendard-Light.otf */; };
+		C14B1C8B28E6ADFB00901CC0 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B1C8228E6ADFB00901CC0 /* Pretendard-Regular.otf */; };
+		C14B1C9928E6AF0500901CC0 /* BioUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C8E28E6AF0500901CC0 /* BioUserDefaults.swift */; };
+		C14B1C9A28E6AF0500901CC0 /* BioLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9028E6AF0500901CC0 /* BioLog.swift */; };
+		C14B1C9B28E6AF0500901CC0 /* BioUserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9228E6AF0500901CC0 /* BioUserDefaultsKeys.swift */; };
+		C14B1C9C28E6AF0500901CC0 /* BioErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9328E6AF0500901CC0 /* BioErrorType.swift */; };
+		C14B1C9D28E6AF0500901CC0 /* modulebio.docc in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9528E6AF0500901CC0 /* modulebio.docc */; };
+		C14B1C9E28E6AF0500901CC0 /* BioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9628E6AF0500901CC0 /* BioManager.swift */; };
+		C14B1C9F28E6AF0500901CC0 /* BioProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9728E6AF0500901CC0 /* BioProtocol.swift */; };
+		C14B1CA028E6AF0500901CC0 /* BioResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1C9828E6AF0500901CC0 /* BioResult.swift */; };
+		C14B1CA228E6AF5200901CC0 /* PmoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14B1CA128E6AF5200901CC0 /* PmoViewController.swift */; };
+		C165FF8528E6C88F00339D4C /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF8328E6C88F00339D4C /* PopupVC.swift */; };
+		C165FF8628E6C88F00339D4C /* PopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165FF8428E6C88F00339D4C /* PopupVC.xib */; };
+		C165FF8B28E6C8E900339D4C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF8828E6C8E800339D4C /* Color.swift */; };
+		C165FF8C28E6C8E900339D4C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF8928E6C8E800339D4C /* Button.swift */; };
+		C165FF8D28E6C8E900339D4C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF8A28E6C8E900339D4C /* String.swift */; };
+		C165FF9028E6C92500339D4C /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF8F28E6C92500339D4C /* CustomView.swift */; };
+		C165FFA228E6C97B00339D4C /* KeyPadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF9328E6C97B00339D4C /* KeyPadCell.swift */; };
+		C165FFA328E6C97B00339D4C /* KeyPadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165FF9428E6C97B00339D4C /* KeyPadCell.xib */; };
+		C165FFA428E6C97B00339D4C /* PasscodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF9628E6C97B00339D4C /* PasscodeConfig.swift */; };
+		C165FFA528E6C97B00339D4C /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FF9728E6C97B00339D4C /* PasscodeViewController.swift */; };
+		C165FFA628E6C97B00339D4C /* Passcode.strings in Resources */ = {isa = PBXBuildFile; fileRef = C165FF9928E6C97B00339D4C /* Passcode.strings */; };
+		C165FFA728E6C97B00339D4C /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C165FF9E28E6C97B00339D4C /* Passcode.storyboard */; };
+		C165FFA828E6C97B00339D4C /* UIViewController+LocalAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFA128E6C97B00339D4C /* UIViewController+LocalAuthentication.swift */; };
+		C165FFAE28E6CBD100339D4C /* BioLoginSelectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165FFAA28E6CBD000339D4C /* BioLoginSelectVC.xib */; };
+		C165FFAF28E6CBD100339D4C /* BioLoginSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFAB28E6CBD100339D4C /* BioLoginSelectVC.swift */; };
+		C165FFB028E6CBD100339D4C /* BioOrNumberLoginBgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFAC28E6CBD100339D4C /* BioOrNumberLoginBgVC.swift */; };
+		C165FFB128E6CBD100339D4C /* BioOrNumberLoginBgVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C165FFAD28E6CBD100339D4C /* BioOrNumberLoginBgVC.xib */; };
+		C165FFB328E6CCB300339D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFB228E6CCB300339D4C /* Constants.swift */; };
+		C165FFC528E6D05B00339D4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C165FFC728E6D05B00339D4C /* Localizable.strings */; };
+		C165FFCD28E6D13300339D4C /* I18NStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFCC28E6D13300339D4C /* I18NStrings.swift */; };
+		EC78AE15191DB032FEEEA1F1 /* Pods_PulmuoneSimpleAuthSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05602BFFE2AE5AA0A4F9E2D2 /* Pods_PulmuoneSimpleAuthSample.framework */; };
+		FC2CF7B70A6B2883C03EA05D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73CD57112EDE6DA0282CA9D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +100,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05602BFFE2AE5AA0A4F9E2D2 /* Pods_PulmuoneSimpleAuthSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulmuoneSimpleAuthSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEA2AE2D8035E29AFE1BB91 /* Pods-PulmuoneSimpleAuthSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSample.debug.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSample/Pods-PulmuoneSimpleAuthSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6624CB7E5CE9D77D2B5A61B4 /* Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90C8682959475DA29EB3F93D /* Pods_PulmuoneSimpleAuthSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulmuoneSimpleAuthSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A83D858FB4524ECFA8CB55C8 /* Pods-PulmuoneSimpleAuthSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSample.release.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSample/Pods-PulmuoneSimpleAuthSample.release.xcconfig"; sourceTree = "<group>"; };
+		C13057BE28ED71DE000AA515 /* PermissionContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionContentView.swift; sourceTree = "<group>"; };
+		C13057BF28ED71DE000AA515 /* PulmuonePermissionApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmuonePermissionApp.swift; sourceTree = "<group>"; };
+		C13057C028ED71DE000AA515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C13057C228ED71DE000AA515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C13057C328ED71DE000AA515 /* PopupState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupState.swift; sourceTree = "<group>"; };
+		C13057C528ED71DE000AA515 /* PermissionNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionNotice.swift; sourceTree = "<group>"; };
+		C13057C628ED71DE000AA515 /* PermissionLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionLocation.swift; sourceTree = "<group>"; };
+		C13057C728ED71DE000AA515 /* PermissionPhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionPhotoLibrary.swift; sourceTree = "<group>"; };
+		C13057C828ED71DE000AA515 /* PermissionContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionContacts.swift; sourceTree = "<group>"; };
+		C13057C928ED71DE000AA515 /* PermissionHealthKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionHealthKit.swift; sourceTree = "<group>"; };
+		C13057CA28ED71DE000AA515 /* PermissionCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionCamera.swift; sourceTree = "<group>"; };
+		C13057CB28ED71DE000AA515 /* PermissionRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionRecord.swift; sourceTree = "<group>"; };
+		C13057CC28ED71DE000AA515 /* PermissionCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionCalendar.swift; sourceTree = "<group>"; };
+		C13057CE28ED71DE000AA515 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C13057CF28ED71DE000AA515 /* UIScrollViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewWrapper.swift; sourceTree = "<group>"; };
+		C13057D028ED71DE000AA515 /* pmo_strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = pmo_strings.strings; sourceTree = "<group>"; };
+		C13057D128ED71DE000AA515 /* PermissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		C13057D328ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PulmuoneLOHASOTFBold.otf; sourceTree = "<group>"; };
+		C13057D528ED71DE000AA515 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		C13057D628ED71DE000AA515 /* PermissionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionContent.swift; sourceTree = "<group>"; };
+		C13057D728ED71DE000AA515 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		C13057D828ED71DE000AA515 /* PermissionPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionPopup.swift; sourceTree = "<group>"; };
+		C13057D928ED71DE000AA515 /* PermissionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionItem.swift; sourceTree = "<group>"; };
 		C14B1C4628E6AD4C00901CC0 /* PulmuoneSimpleAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulmuoneSimpleAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14B1C4928E6AD4C00901CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14B1C4B28E6AD4C00901CC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +141,52 @@
 		C14B1C6628E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulmuoneSimpleAuthSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14B1C6A28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmuoneSimpleAuthSampleUITests.swift; sourceTree = "<group>"; };
 		C14B1C6C28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulmuoneSimpleAuthSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C14B1C7A28E6ADFA00901CC0 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		C14B1C7B28E6ADFA00901CC0 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		C14B1C7C28E6ADFA00901CC0 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		C14B1C7D28E6ADFA00901CC0 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		C14B1C7E28E6ADFA00901CC0 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		C14B1C7F28E6ADFB00901CC0 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		C14B1C8028E6ADFB00901CC0 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		C14B1C8128E6ADFB00901CC0 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		C14B1C8228E6ADFB00901CC0 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		C14B1C8E28E6AF0500901CC0 /* BioUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioUserDefaults.swift; sourceTree = "<group>"; };
+		C14B1C9028E6AF0500901CC0 /* BioLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioLog.swift; sourceTree = "<group>"; };
+		C14B1C9228E6AF0500901CC0 /* BioUserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioUserDefaultsKeys.swift; sourceTree = "<group>"; };
+		C14B1C9328E6AF0500901CC0 /* BioErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioErrorType.swift; sourceTree = "<group>"; };
+		C14B1C9428E6AF0500901CC0 /* modulebio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modulebio.h; sourceTree = "<group>"; };
+		C14B1C9528E6AF0500901CC0 /* modulebio.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = modulebio.docc; sourceTree = "<group>"; };
+		C14B1C9628E6AF0500901CC0 /* BioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioManager.swift; sourceTree = "<group>"; };
+		C14B1C9728E6AF0500901CC0 /* BioProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioProtocol.swift; sourceTree = "<group>"; };
+		C14B1C9828E6AF0500901CC0 /* BioResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioResult.swift; sourceTree = "<group>"; };
+		C14B1CA128E6AF5200901CC0 /* PmoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PmoViewController.swift; sourceTree = "<group>"; };
+		C165FF8328E6C88F00339D4C /* PopupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		C165FF8428E6C88F00339D4C /* PopupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupVC.xib; sourceTree = "<group>"; };
+		C165FF8828E6C8E800339D4C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C165FF8928E6C8E800339D4C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		C165FF8A28E6C8E900339D4C /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C165FF8F28E6C92500339D4C /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C165FF9328E6C97B00339D4C /* KeyPadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPadCell.swift; sourceTree = "<group>"; };
+		C165FF9428E6C97B00339D4C /* KeyPadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyPadCell.xib; sourceTree = "<group>"; };
+		C165FF9628E6C97B00339D4C /* PasscodeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeConfig.swift; sourceTree = "<group>"; };
+		C165FF9728E6C97B00339D4C /* PasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		C165FF9C28E6C97B00339D4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Passcode.strings; sourceTree = "<group>"; };
+		C165FF9F28E6C97B00339D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Passcode.storyboard; sourceTree = "<group>"; };
+		C165FFA128E6C97B00339D4C /* UIViewController+LocalAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LocalAuthentication.swift"; sourceTree = "<group>"; };
+		C165FFAA28E6CBD000339D4C /* BioLoginSelectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BioLoginSelectVC.xib; sourceTree = "<group>"; };
+		C165FFAB28E6CBD100339D4C /* BioLoginSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioLoginSelectVC.swift; sourceTree = "<group>"; };
+		C165FFAC28E6CBD100339D4C /* BioOrNumberLoginBgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioOrNumberLoginBgVC.swift; sourceTree = "<group>"; };
+		C165FFAD28E6CBD100339D4C /* BioOrNumberLoginBgVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BioOrNumberLoginBgVC.xib; sourceTree = "<group>"; };
+		C165FFB228E6CCB300339D4C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C165FFC828E6D09A00339D4C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Passcode.strings; sourceTree = "<group>"; };
+		C165FFC928E6D09B00339D4C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		C165FFCA28E6D09B00339D4C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C165FFCB28E6D0A000339D4C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C165FFCC28E6D13300339D4C /* I18NStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I18NStrings.swift; sourceTree = "<group>"; };
+		C73CD57112EDE6DA0282CA9D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D271E116B4996F3ED4635BCD /* Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSampleTests/Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB10B4472F1788257C91DC37 /* Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSampleTests/Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6E7932764AFAB5B1641D5C4 /* Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC78AE15191DB032FEEEA1F1 /* Pods_PulmuoneSimpleAuthSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3929ABE1B5FB54F0E31E63B /* Pods_PulmuoneSimpleAuthSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +210,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2CF7B70A6B2883C03EA05D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43E1A2CF54BCBDF3438EDFFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FEA2AE2D8035E29AFE1BB91 /* Pods-PulmuoneSimpleAuthSample.debug.xcconfig */,
+				A83D858FB4524ECFA8CB55C8 /* Pods-PulmuoneSimpleAuthSample.release.xcconfig */,
+				6624CB7E5CE9D77D2B5A61B4 /* Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.debug.xcconfig */,
+				E6E7932764AFAB5B1641D5C4 /* Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.release.xcconfig */,
+				DB10B4472F1788257C91DC37 /* Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig */,
+				D271E116B4996F3ED4635BCD /* Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AED46CA7D46612E57ECE92B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05602BFFE2AE5AA0A4F9E2D2 /* Pods_PulmuoneSimpleAuthSample.framework */,
+				C73CD57112EDE6DA0282CA9D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework */,
+				90C8682959475DA29EB3F93D /* Pods_PulmuoneSimpleAuthSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C13057BD28ED71DE000AA515 /* PulmuonePermission */ = {
+			isa = PBXGroup;
+			children = (
+				C13057BE28ED71DE000AA515 /* PermissionContentView.swift */,
+				C13057BF28ED71DE000AA515 /* PulmuonePermissionApp.swift */,
+				C13057C028ED71DE000AA515 /* Assets.xcassets */,
+				C13057C128ED71DE000AA515 /* Preview Content */,
+				C13057C328ED71DE000AA515 /* PopupState.swift */,
+				C13057C428ED71DE000AA515 /* Permissions */,
+				C13057CD28ED71DE000AA515 /* Common */,
+				C13057D028ED71DE000AA515 /* pmo_strings.strings */,
+				C13057D128ED71DE000AA515 /* PermissionManager.swift */,
+				C13057D228ED71DE000AA515 /* Fonts */,
+				C13057D428ED71DE000AA515 /* Views */,
+			);
+			path = PulmuonePermission;
+			sourceTree = "<group>";
+		};
+		C13057C128ED71DE000AA515 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C13057C228ED71DE000AA515 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C13057C428ED71DE000AA515 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				C13057C528ED71DE000AA515 /* PermissionNotice.swift */,
+				C13057C628ED71DE000AA515 /* PermissionLocation.swift */,
+				C13057C728ED71DE000AA515 /* PermissionPhotoLibrary.swift */,
+				C13057C828ED71DE000AA515 /* PermissionContacts.swift */,
+				C13057C928ED71DE000AA515 /* PermissionHealthKit.swift */,
+				C13057CA28ED71DE000AA515 /* PermissionCamera.swift */,
+				C13057CB28ED71DE000AA515 /* PermissionRecord.swift */,
+				C13057CC28ED71DE000AA515 /* PermissionCalendar.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		C13057CD28ED71DE000AA515 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C13057CE28ED71DE000AA515 /* Extensions.swift */,
+				C13057CF28ED71DE000AA515 /* UIScrollViewWrapper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C13057D228ED71DE000AA515 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C13057D328ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C13057D428ED71DE000AA515 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C13057D528ED71DE000AA515 /* BlurView.swift */,
+				C13057D628ED71DE000AA515 /* PermissionContent.swift */,
+				C13057D728ED71DE000AA515 /* CustomCorner.swift */,
+				C13057D828ED71DE000AA515 /* PermissionPopup.swift */,
+				C13057D928ED71DE000AA515 /* PermissionItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C14B1C3D28E6AD4C00901CC0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +317,8 @@
 				C14B1C5F28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleTests */,
 				C14B1C6928E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITests */,
 				C14B1C4728E6AD4C00901CC0 /* Products */,
+				43E1A2CF54BCBDF3438EDFFA /* Pods */,
+				AED46CA7D46612E57ECE92B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +335,23 @@
 		C14B1C4828E6AD4C00901CC0 /* PulmuoneSimpleAuthSample */ = {
 			isa = PBXGroup;
 			children = (
+				C13057BD28ED71DE000AA515 /* PulmuonePermission */,
+				C14B1C7928E6ADB500901CC0 /* font */,
+				C14B1C8C28E6AF0500901CC0 /* modulebio */,
+				C165FF8728E6C8C700339D4C /* Extensions */,
+				C165FF8228E6C87900339D4C /* Popup */,
+				C165FF9128E6C97B00339D4C /* Passcode */,
+				C165FFA928E6CBB300339D4C /* Login */,
+				C165FF8E28E6C91500339D4C /* Custom */,
 				C14B1C4928E6AD4C00901CC0 /* AppDelegate.swift */,
 				C14B1C4B28E6AD4C00901CC0 /* SceneDelegate.swift */,
 				C14B1C4D28E6AD4C00901CC0 /* ViewController.swift */,
+				C14B1CA128E6AF5200901CC0 /* PmoViewController.swift */,
+				C165FFB228E6CCB300339D4C /* Constants.swift */,
 				C14B1C4F28E6AD4C00901CC0 /* Main.storyboard */,
 				C14B1C5228E6AD4F00901CC0 /* Assets.xcassets */,
+				C165FFC728E6D05B00339D4C /* Localizable.strings */,
+				C165FFCC28E6D13300339D4C /* I18NStrings.swift */,
 				C14B1C5428E6AD4F00901CC0 /* LaunchScreen.storyboard */,
 				C14B1C5728E6AD4F00901CC0 /* Info.plist */,
 			);
@@ -127,6 +375,146 @@
 			path = PulmuoneSimpleAuthSampleUITests;
 			sourceTree = "<group>";
 		};
+		C14B1C7928E6ADB500901CC0 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				C14B1C8028E6ADFB00901CC0 /* Pretendard-Black.otf */,
+				C14B1C7C28E6ADFA00901CC0 /* Pretendard-Bold.otf */,
+				C14B1C7B28E6ADFA00901CC0 /* Pretendard-ExtraBold.otf */,
+				C14B1C7A28E6ADFA00901CC0 /* Pretendard-ExtraLight.otf */,
+				C14B1C8128E6ADFB00901CC0 /* Pretendard-Light.otf */,
+				C14B1C7E28E6ADFA00901CC0 /* Pretendard-Medium.otf */,
+				C14B1C8228E6ADFB00901CC0 /* Pretendard-Regular.otf */,
+				C14B1C7D28E6ADFA00901CC0 /* Pretendard-SemiBold.otf */,
+				C14B1C7F28E6ADFB00901CC0 /* Pretendard-Thin.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		C14B1C8C28E6AF0500901CC0 /* modulebio */ = {
+			isa = PBXGroup;
+			children = (
+				C14B1C8D28E6AF0500901CC0 /* extension */,
+				C14B1C8F28E6AF0500901CC0 /* util */,
+				C14B1C9128E6AF0500901CC0 /* enum */,
+				C14B1C9428E6AF0500901CC0 /* modulebio.h */,
+				C14B1C9528E6AF0500901CC0 /* modulebio.docc */,
+				C14B1C9628E6AF0500901CC0 /* BioManager.swift */,
+				C14B1C9728E6AF0500901CC0 /* BioProtocol.swift */,
+				C14B1C9828E6AF0500901CC0 /* BioResult.swift */,
+			);
+			path = modulebio;
+			sourceTree = "<group>";
+		};
+		C14B1C8D28E6AF0500901CC0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C14B1C8E28E6AF0500901CC0 /* BioUserDefaults.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		C14B1C8F28E6AF0500901CC0 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C14B1C9028E6AF0500901CC0 /* BioLog.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		C14B1C9128E6AF0500901CC0 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				C14B1C9228E6AF0500901CC0 /* BioUserDefaultsKeys.swift */,
+				C14B1C9328E6AF0500901CC0 /* BioErrorType.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		C165FF8228E6C87900339D4C /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF8328E6C88F00339D4C /* PopupVC.swift */,
+				C165FF8428E6C88F00339D4C /* PopupVC.xib */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		C165FF8728E6C8C700339D4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF8928E6C8E800339D4C /* Button.swift */,
+				C165FF8828E6C8E800339D4C /* Color.swift */,
+				C165FF8A28E6C8E900339D4C /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C165FF8E28E6C91500339D4C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF8F28E6C92500339D4C /* CustomView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C165FF9128E6C97B00339D4C /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF9228E6C97B00339D4C /* Cells */,
+				C165FF9528E6C97B00339D4C /* Config */,
+				C165FF9728E6C97B00339D4C /* PasscodeViewController.swift */,
+				C165FF9828E6C97B00339D4C /* Views */,
+				C165FFA028E6C97B00339D4C /* Helper */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		C165FF9228E6C97B00339D4C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF9328E6C97B00339D4C /* KeyPadCell.swift */,
+				C165FF9428E6C97B00339D4C /* KeyPadCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C165FF9528E6C97B00339D4C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF9628E6C97B00339D4C /* PasscodeConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C165FF9828E6C97B00339D4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C165FF9928E6C97B00339D4C /* Passcode.strings */,
+				C165FF9E28E6C97B00339D4C /* Passcode.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C165FFA028E6C97B00339D4C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C165FFA128E6C97B00339D4C /* UIViewController+LocalAuthentication.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C165FFA928E6CBB300339D4C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C165FFAB28E6CBD100339D4C /* BioLoginSelectVC.swift */,
+				C165FFAA28E6CBD000339D4C /* BioLoginSelectVC.xib */,
+				C165FFAC28E6CBD100339D4C /* BioOrNumberLoginBgVC.swift */,
+				C165FFAD28E6CBD100339D4C /* BioOrNumberLoginBgVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +522,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C14B1C7028E6AD5000901CC0 /* Build configuration list for PBXNativeTarget "PulmuoneSimpleAuthSample" */;
 			buildPhases = (
+				8F0D8366BB0098D6862B644F /* [CP] Check Pods Manifest.lock */,
 				C14B1C4228E6AD4C00901CC0 /* Sources */,
 				C14B1C4328E6AD4C00901CC0 /* Frameworks */,
 				C14B1C4428E6AD4C00901CC0 /* Resources */,
+				D301DA1D36833B025F0C3505 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +541,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C14B1C7328E6AD5000901CC0 /* Build configuration list for PBXNativeTarget "PulmuoneSimpleAuthSampleTests" */;
 			buildPhases = (
+				65CA41C7FA291AF10ADB4B9C /* [CP] Check Pods Manifest.lock */,
 				C14B1C5828E6AD5000901CC0 /* Sources */,
 				C14B1C5928E6AD5000901CC0 /* Frameworks */,
 				C14B1C5A28E6AD5000901CC0 /* Resources */,
@@ -169,9 +560,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C14B1C7628E6AD5000901CC0 /* Build configuration list for PBXNativeTarget "PulmuoneSimpleAuthSampleUITests" */;
 			buildPhases = (
+				9BBA297622F9770B87C40AC5 /* [CP] Check Pods Manifest.lock */,
 				C14B1C6228E6AD5000901CC0 /* Sources */,
 				C14B1C6328E6AD5000901CC0 /* Frameworks */,
 				C14B1C6428E6AD5000901CC0 /* Resources */,
+				5FC1AB507C32271976ED0240 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +606,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = C14B1C3D28E6AD4C00901CC0;
 			productRefGroup = C14B1C4728E6AD4C00901CC0 /* Products */;
@@ -232,7 +626,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				C14B1C5628E6AD4F00901CC0 /* LaunchScreen.storyboard in Resources */,
+				C14B1C8B28E6ADFB00901CC0 /* Pretendard-Regular.otf in Resources */,
+				C165FFAE28E6CBD100339D4C /* BioLoginSelectVC.xib in Resources */,
+				C14B1C8528E6ADFB00901CC0 /* Pretendard-Bold.otf in Resources */,
+				C14B1C8628E6ADFB00901CC0 /* Pretendard-SemiBold.otf in Resources */,
+				C165FF8628E6C88F00339D4C /* PopupVC.xib in Resources */,
+				C165FFB128E6CBD100339D4C /* BioOrNumberLoginBgVC.xib in Resources */,
+				C14B1C8828E6ADFB00901CC0 /* Pretendard-Thin.otf in Resources */,
+				C14B1C8928E6ADFB00901CC0 /* Pretendard-Black.otf in Resources */,
+				C14B1C8A28E6ADFB00901CC0 /* Pretendard-Light.otf in Resources */,
+				C13057DD28ED71DE000AA515 /* Preview Assets.xcassets in Resources */,
+				C14B1C8728E6ADFB00901CC0 /* Pretendard-Medium.otf in Resources */,
+				C165FFA328E6C97B00339D4C /* KeyPadCell.xib in Resources */,
+				C13057EB28ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf in Resources */,
 				C14B1C5328E6AD4F00901CC0 /* Assets.xcassets in Resources */,
+				C13057E928ED71DE000AA515 /* pmo_strings.strings in Resources */,
+				C14B1C8428E6ADFB00901CC0 /* Pretendard-ExtraBold.otf in Resources */,
+				C13057DC28ED71DE000AA515 /* Assets.xcassets in Resources */,
+				C165FFA728E6C97B00339D4C /* Passcode.storyboard in Resources */,
+				C14B1C8328E6ADFB00901CC0 /* Pretendard-ExtraLight.otf in Resources */,
+				C165FFC528E6D05B00339D4C /* Localizable.strings in Resources */,
+				C165FFA628E6C97B00339D4C /* Passcode.strings in Resources */,
 				C14B1C5128E6AD4C00901CC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +667,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FC1AB507C32271976ED0240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65CA41C7FA291AF10ADB4B9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulmuoneSimpleAuthSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0D8366BB0098D6862B644F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulmuoneSimpleAuthSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BBA297622F9770B87C40AC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D301DA1D36833B025F0C3505 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulmuoneSimpleAuthSample/Pods-PulmuoneSimpleAuthSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulmuoneSimpleAuthSample/Pods-PulmuoneSimpleAuthSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PulmuoneSimpleAuthSample/Pods-PulmuoneSimpleAuthSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C14B1C4228E6AD4C00901CC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13057DE28ED71DE000AA515 /* PopupState.swift in Sources */,
+				C14B1CA028E6AF0500901CC0 /* BioResult.swift in Sources */,
+				C14B1C9A28E6AF0500901CC0 /* BioLog.swift in Sources */,
+				C165FFA828E6C97B00339D4C /* UIViewController+LocalAuthentication.swift in Sources */,
+				C165FFAF28E6CBD100339D4C /* BioLoginSelectVC.swift in Sources */,
+				C13057E128ED71DE000AA515 /* PermissionPhotoLibrary.swift in Sources */,
+				C13057E328ED71DE000AA515 /* PermissionHealthKit.swift in Sources */,
+				C14B1C9C28E6AF0500901CC0 /* BioErrorType.swift in Sources */,
+				C14B1C9F28E6AF0500901CC0 /* BioProtocol.swift in Sources */,
 				C14B1C4E28E6AD4C00901CC0 /* ViewController.swift in Sources */,
+				C13057E628ED71DE000AA515 /* PermissionCalendar.swift in Sources */,
+				C13057F028ED71DE000AA515 /* PermissionItem.swift in Sources */,
+				C165FFB028E6CBD100339D4C /* BioOrNumberLoginBgVC.swift in Sources */,
+				C14B1CA228E6AF5200901CC0 /* PmoViewController.swift in Sources */,
+				C14B1C9928E6AF0500901CC0 /* BioUserDefaults.swift in Sources */,
+				C13057E728ED71DE000AA515 /* Extensions.swift in Sources */,
+				C13057E028ED71DE000AA515 /* PermissionLocation.swift in Sources */,
+				C14B1C9E28E6AF0500901CC0 /* BioManager.swift in Sources */,
+				C13057EC28ED71DE000AA515 /* BlurView.swift in Sources */,
+				C13057DB28ED71DE000AA515 /* PulmuonePermissionApp.swift in Sources */,
+				C165FF8528E6C88F00339D4C /* PopupVC.swift in Sources */,
+				C13057E428ED71DE000AA515 /* PermissionCamera.swift in Sources */,
+				C13057EF28ED71DE000AA515 /* PermissionPopup.swift in Sources */,
+				C165FF9028E6C92500339D4C /* CustomView.swift in Sources */,
+				C165FF8B28E6C8E900339D4C /* Color.swift in Sources */,
+				C165FF8C28E6C8E900339D4C /* Button.swift in Sources */,
+				C165FFA528E6C97B00339D4C /* PasscodeViewController.swift in Sources */,
+				C13057ED28ED71DE000AA515 /* PermissionContent.swift in Sources */,
+				C165FFCD28E6D13300339D4C /* I18NStrings.swift in Sources */,
 				C14B1C4A28E6AD4C00901CC0 /* AppDelegate.swift in Sources */,
+				C13057DF28ED71DE000AA515 /* PermissionNotice.swift in Sources */,
+				C165FFA228E6C97B00339D4C /* KeyPadCell.swift in Sources */,
+				C165FFA428E6C97B00339D4C /* PasscodeConfig.swift in Sources */,
+				C13057EA28ED71DE000AA515 /* PermissionManager.swift in Sources */,
+				C14B1C9D28E6AF0500901CC0 /* modulebio.docc in Sources */,
+				C13057DA28ED71DE000AA515 /* PermissionContentView.swift in Sources */,
+				C13057E228ED71DE000AA515 /* PermissionContacts.swift in Sources */,
 				C14B1C4C28E6AD4C00901CC0 /* SceneDelegate.swift in Sources */,
+				C13057E828ED71DE000AA515 /* UIScrollViewWrapper.swift in Sources */,
+				C165FF8D28E6C8E900339D4C /* String.swift in Sources */,
+				C13057E528ED71DE000AA515 /* PermissionRecord.swift in Sources */,
+				C13057EE28ED71DE000AA515 /* CustomCorner.swift in Sources */,
+				C14B1C9B28E6AF0500901CC0 /* BioUserDefaultsKeys.swift in Sources */,
+				C165FFB328E6CCB300339D4C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +859,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C14B1C5028E6AD4C00901CC0 /* Base */,
+				C165FFC928E6D09B00339D4C /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -309,8 +868,34 @@
 			isa = PBXVariantGroup;
 			children = (
 				C14B1C5528E6AD4F00901CC0 /* Base */,
+				C165FFCA28E6D09B00339D4C /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C165FF9928E6C97B00339D4C /* Passcode.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C165FF9C28E6C97B00339D4C /* en */,
+			);
+			name = Passcode.strings;
+			sourceTree = "<group>";
+		};
+		C165FF9E28E6C97B00339D4C /* Passcode.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C165FF9F28E6C97B00339D4C /* Base */,
+				C165FFC828E6D09A00339D4C /* ko */,
+			);
+			name = Passcode.storyboard;
+			sourceTree = "<group>";
+		};
+		C165FFC728E6D05B00339D4C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C165FFCB28E6D0A000339D4C /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -320,6 +905,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -366,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -380,6 +966,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -420,7 +1007,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,6 +1019,7 @@
 		};
 		C14B1C7128E6AD5000901CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FEA2AE2D8035E29AFE1BB91 /* Pods-PulmuoneSimpleAuthSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,26 +1028,35 @@
 				DEVELOPMENT_TEAM = 2ALEPG96F5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PulmuoneSimpleAuthSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PulmuoneSimpleAuth;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "생체인증을 위해 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth.PulmuoneSimpleAuthSample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C14B1C7228E6AD5000901CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A83D858FB4524ECFA8CB55C8 /* Pods-PulmuoneSimpleAuthSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,26 +1065,35 @@
 				DEVELOPMENT_TEAM = 2ALEPG96F5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PulmuoneSimpleAuthSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PulmuoneSimpleAuth;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "생체인증을 위해 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth.PulmuoneSimpleAuthSample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		C14B1C7428E6AD5000901CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB10B4472F1788257C91DC37 /* Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,7 +1101,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ALEPG96F5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth.PulmuoneSimpleAuthSampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +1114,7 @@
 		};
 		C14B1C7528E6AD5000901CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D271E116B4996F3ED4635BCD /* Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,7 +1122,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ALEPG96F5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth.PulmuoneSimpleAuthSampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +1135,7 @@
 		};
 		C14B1C7728E6AD5000901CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6624CB7E5CE9D77D2B5A61B4 /* Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +1154,7 @@
 		};
 		C14B1C7828E6AD5000901CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E7932764AFAB5B1641D5C4 /* Pods-PulmuoneSimpleAuthSample-PulmuoneSimpleAuthSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

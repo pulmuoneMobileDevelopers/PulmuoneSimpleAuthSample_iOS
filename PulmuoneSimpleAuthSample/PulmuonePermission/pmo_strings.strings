@@ -1,0 +1,43 @@
+/* 
+  pmo_strings.strings
+  PmoPermissionSample
+
+  Created by PMO on 2022/08/10.
+  
+*/
+pmo_location = "GPS 위치정보";
+pmo_location_sub = "단말기의 위치정보 기능 사용";
+pmo_bluetooth = "블루투스";
+pmo_bluetooth_sub = "블루투스를 검색 하고 사용할 수 있습니다.";
+pmo_calendar = "달력";
+pmo_calendar_sub = "달력 데이터를 조회하고 사용할 수 있습니다.";
+pmo_callkit = "전화";
+pmo_callkit_sub = "앱에서 직접 전화를 걸 수 있습니다.";
+pmo_camera = "카메라 및 촬영";
+pmo_camera_sub = "찰칵 찰칵 여러 사진을 찍습니다.";
+pmo_contacts = "연락처";
+pmo_contacts_sub = "연락처를 사용하여 친구에게 추천합니다.";
+pmo_health = "헬스";
+pmo_health_sub = "개인의 헬스정보를 조회하고 사용할 수 있습니다.";
+pmo_homekit = "홈킷";
+pmo_homekit_sub = "홈킷에 사용자 및 기기를 조회 및 등록 합니다.";
+pmo_media_library = "파일 및 미디어";
+pmo_media_library_sub = "파일을 내부에 저장하기 위해 사용합니다.";
+pmo_microphone = "마이크";
+pmo_microphone_sub = "디바이스의 마이크를 사용합니다.";
+pmo_motion = "모션";
+pmo_motion_sub = "사용자의 모션 센서를 감지하고 모션 데이터를 사용합니다.";
+pmo_photos = "사진";
+pmo_photos_sub = "디바이스의 사진에 접근하고 사용합니다.";
+pmo_network = "네트워크 연결정보";
+pmo_network_sub = "WIFI, LTE 연결정보 확인";
+pmo_speech_recognition = "음성 녹음";
+pmo_speech_recognition_sub = "음성 녹음을 수행합니다.";
+pmo_notice = "알림";
+pmo_notice_sub = "푸시알림 등록 및 수신";
+pmo_phone = "전화 기록 읽기";
+pmo_phone_sub = "전화 내역을 확인하고 수집합니다.";
+pmo_biometric_auth = "생체인증";
+pmo_biometric_auth_sub = "지문,얼굴 등 로그인 연동";
+pmo_history = "기기 및 앱 기록";
+pmo_history_sub = "통계, 푸시발송, 오류정보 확인";

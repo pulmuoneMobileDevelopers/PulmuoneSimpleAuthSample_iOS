@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "생체인증(Face ID, Touch ID)"; ObjectID = "82L-gT-5RD"; */
+"82L-gT-5RD.configuration.title" = "생체인증(Face ID, Touch ID)";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "82L-gT-5RD"; */
+"82L-gT-5RD.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "간편인증(4자리 Pin코드)"; ObjectID = "bdg-WR-F4C"; */
+"bdg-WR-F4C.configuration.title" = "간편인증(4자리 Pin코드)";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bdg-WR-F4C"; */
+"bdg-WR-F4C.normalTitle" = "Button";
