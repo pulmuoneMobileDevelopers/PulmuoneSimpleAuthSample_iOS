@@ -351,10 +351,19 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
         
         if ((!Defaults[key: Constants.userDefault_BioAuthLoginKey] && !Defaults[key: Constants.userDefault_PinCodeLoginKey]) || retrievedUserId == nil || retrievedUserId == "") {
             DispatchQueue.main.async {
-                //생체인증? 간편번호?
-                self.showBioLoginSelectVC() {
+                /**
+                 간편인증 선택 화면 좌측 상단 백 버튼 안보이기
+                 */
+//                self.showBioLoginSelectVC() {
+//                    completion()
+//                }
+                /**
+                 간편인증 선택 화면 좌측 상단 백 버튼 보이기 (초기화 화면에서 보이게 처리하면 좋을 듯)
+                 */
+                self.showBioLoginSelectVC(isBackButtonHidden: false) {
                     completion()
                 }
+
             }
         } else {
             log.verbose("bioOrNumberLoginBgVC show")
@@ -392,20 +401,12 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                                 self.removeKeyChain()
                                 self.showToast(vc: self.getTopMostViewController()!, toastMode: .WARNING, message: self.authFailedMessage)
                             }
-                            
-//                            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
-//                                self.getRootViewController()?.dismiss(animated: false, completion: nil)
-//                            }
                         }
                     }
                 } else {
                     //생체인증 등록 요청
                     BioManager.shared.registerBiometrics(message: self.plzAuthBioMessage) { result in
                         self.log.verbose("생체인증 등록 요청, result: \(result)")
-                        
-//                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
-//                            self.getRootViewController()?.dismiss(animated: false, completion: nil)
-//                        }
                     }
                 }
             } else {
@@ -465,8 +466,6 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
         self.addChild(contentView!)
         self.view.addSubview((contentView?.view)!)
         
-        //(contentView?.view)!.alpha = 0
-        
         contentView?.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             contentView!.view.widthAnchor.constraint(equalTo: self.view.widthAnchor),
@@ -525,7 +524,7 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
     }
     
     // MARK: - BioLoginSelectVC의 Back Button 터치 이벤트 수신
-    func bioLoginSelectBackButtonTouched() {
+    private func bioLoginSelectBackButtonTouched() {
         self.log.verbose("bioLoginSelectBackButtonTouched")
         self.removeKeyChain()
     }
