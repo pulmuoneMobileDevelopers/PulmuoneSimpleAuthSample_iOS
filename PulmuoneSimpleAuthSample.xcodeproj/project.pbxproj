@@ -128,6 +128,7 @@
 		C13057D728ED71DE000AA515 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		C13057D828ED71DE000AA515 /* PermissionPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionPopup.swift; sourceTree = "<group>"; };
 		C13057D928ED71DE000AA515 /* PermissionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionItem.swift; sourceTree = "<group>"; };
+		C13057F128F019FC000AA515 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C14B1C4628E6AD4C00901CC0 /* PulmuoneSimpleAuthSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulmuoneSimpleAuthSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14B1C4928E6AD4C00901CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14B1C4B28E6AD4C00901CC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -354,6 +355,7 @@
 				C165FFCC28E6D13300339D4C /* I18NStrings.swift */,
 				C14B1C5428E6AD4F00901CC0 /* LaunchScreen.storyboard */,
 				C14B1C5728E6AD4F00901CC0 /* Info.plist */,
+				C13057F128F019FC000AA515 /* README.md */,
 			);
 			path = PulmuoneSimpleAuthSample;
 			sourceTree = "<group>";

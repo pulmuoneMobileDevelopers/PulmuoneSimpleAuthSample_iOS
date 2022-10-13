@@ -95,7 +95,7 @@ class BioLoginSelectVC: PmoViewController, UIGestureRecognizerDelegate {
             self.log.verbose("register: \(register)")
             if (register) {
                 //생체인증 서명 요청
-                BioManager.shared.signBiometrics(message: "test") { result in
+                BioManager.shared.signBiometrics(message: self.plzAuthBioMessage) { result in
                     if(result.success) {
                         self.log.verbose("생체인증 성공")
                         

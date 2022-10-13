@@ -524,7 +524,7 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
     }
     
     // MARK: - BioLoginSelectVC의 Back Button 터치 이벤트 수신
-    private func bioLoginSelectBackButtonTouched() {
+    func bioLoginSelectBackButtonTouched() {
         self.log.verbose("bioLoginSelectBackButtonTouched")
         self.removeKeyChain()
     }
