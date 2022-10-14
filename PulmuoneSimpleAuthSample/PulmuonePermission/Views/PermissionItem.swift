@@ -38,14 +38,14 @@ struct PermissionItem: View {
             }
             VStack (alignment: .leading, spacing: 0){
                 Text(permissionData.mainString)
-                    .font(.custom("Pretendard-Bold", size: stringSize))
+                    .font(.custom("Pretendard-Medium", size: stringSize))
 //                    .font(.system(size: 14))
 //                    .fontWeight(.bold)
                     .foregroundColor(Color.title)
                     .frame(height: 20)
                 
                 Text(permissionData.subString)
-                    .font(.custom("Pretendard-Bold", size: stringSize))
+                    .font(.custom("Pretendard-Regular", size: stringSize))
 //                    .font(.system(size: 14))
 //                    .fontWeight(.bold)
                     .foregroundColor(Color.sub_title)

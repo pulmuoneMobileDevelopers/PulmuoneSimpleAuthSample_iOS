@@ -163,7 +163,7 @@ struct PermissionContent: View {
                 HStack {
                     Text(setPermissionChangeTitle ?? "설정 > 풀무원 앱 > 권한 설정 > 허용")
                     //                        .font(.system(size: 14))
-                        .font(.custom("Pretendard-Bold", size: stringSize - 4))
+                        .font(.custom("Pretendard-Medium", size: stringSize - 4))
                         //.fontWeight(.bold)
                         .foregroundColor(Color.title)
                         .frame(alignment: .leading)
