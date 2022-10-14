@@ -25,7 +25,6 @@
 		C13057E828ED71DE000AA515 /* UIScrollViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057CF28ED71DE000AA515 /* UIScrollViewWrapper.swift */; };
 		C13057E928ED71DE000AA515 /* pmo_strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = C13057D028ED71DE000AA515 /* pmo_strings.strings */; };
 		C13057EA28ED71DE000AA515 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D128ED71DE000AA515 /* PermissionManager.swift */; };
-		C13057EB28ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C13057D328ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf */; };
 		C13057EC28ED71DE000AA515 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D528ED71DE000AA515 /* BlurView.swift */; };
 		C13057ED28ED71DE000AA515 /* PermissionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D628ED71DE000AA515 /* PermissionContent.swift */; };
 		C13057EE28ED71DE000AA515 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057D728ED71DE000AA515 /* CustomCorner.swift */; };
@@ -122,7 +121,6 @@
 		C13057CF28ED71DE000AA515 /* UIScrollViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewWrapper.swift; sourceTree = "<group>"; };
 		C13057D028ED71DE000AA515 /* pmo_strings.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = pmo_strings.strings; sourceTree = "<group>"; };
 		C13057D128ED71DE000AA515 /* PermissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
-		C13057D328ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PulmuoneLOHASOTFBold.otf; sourceTree = "<group>"; };
 		C13057D528ED71DE000AA515 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		C13057D628ED71DE000AA515 /* PermissionContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionContent.swift; sourceTree = "<group>"; };
 		C13057D728ED71DE000AA515 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
@@ -253,7 +251,6 @@
 				C13057CD28ED71DE000AA515 /* Common */,
 				C13057D028ED71DE000AA515 /* pmo_strings.strings */,
 				C13057D128ED71DE000AA515 /* PermissionManager.swift */,
-				C13057D228ED71DE000AA515 /* Fonts */,
 				C13057D428ED71DE000AA515 /* Views */,
 			);
 			path = PulmuonePermission;
@@ -289,14 +286,6 @@
 				C13057CF28ED71DE000AA515 /* UIScrollViewWrapper.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		C13057D228ED71DE000AA515 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				C13057D328ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C13057D428ED71DE000AA515 /* Views */ = {
@@ -640,7 +629,6 @@
 				C13057DD28ED71DE000AA515 /* Preview Assets.xcassets in Resources */,
 				C14B1C8728E6ADFB00901CC0 /* Pretendard-Medium.otf in Resources */,
 				C165FFA328E6C97B00339D4C /* KeyPadCell.xib in Resources */,
-				C13057EB28ED71DE000AA515 /* PulmuoneLOHASOTFBold.otf in Resources */,
 				C14B1C5328E6AD4F00901CC0 /* Assets.xcassets in Resources */,
 				C13057E928ED71DE000AA515 /* pmo_strings.strings in Resources */,
 				C14B1C8428E6ADFB00901CC0 /* Pretendard-ExtraBold.otf in Resources */,
