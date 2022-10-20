@@ -271,7 +271,7 @@ private func checkKeyChianSaved(completion: @escaping () -> Void) {
 ```
 
 ### 1.4. Passcode 그룹
-> ### 4자리 간편번호 설정 화면 제공 및 로직이 구현되어 있습니다.
+> ### 4자리 간편번호 설정 화면 제공 및 로직이 구현되어 있습니다. 간편번호 인증은 최대 5번까지 시도합니다.
 <img src="./PulmuoneSimpleAuthSample/ScreenShot/passcode.png" width="250px" title="passcode" align="top"/> 
 <img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode1.png" width="200px" title="pincode" align="top"/> 
 <img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode2.png" width="200px" title="pincode" align="top"/> 
