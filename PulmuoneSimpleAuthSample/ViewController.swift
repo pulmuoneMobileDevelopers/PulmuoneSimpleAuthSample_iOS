@@ -137,7 +137,7 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                 _message = self.deviceLockOutMessage
                 break
             case BioErrorType.deviceNotEnrolled: //기기에 등록된 생체 인증 정보가 없습니다. 기기에 생체인증 등록후 이용 가능합니다.
-                _message = deviceNotEnrolledMessage
+                _message = self.deviceNotEnrolledMessage
                 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
                     self.showToast(vc: self.getTopMostViewController()!, message: self.authFailedMessage)
