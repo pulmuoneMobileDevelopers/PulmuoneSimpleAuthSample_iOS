@@ -428,7 +428,7 @@ public func showAlertPopup(popupText: String, okBtnName: String, completionHandl
 ---
 
 ## 2. 기타
-> ### PmoViewController에 Toast가 구현되어 있습니다.
+### 2.1. PmoViewController에 Toast가 구현되어 있습니다.
 
 <img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
 <img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode3.png" width="250px" title="pincode" align="top"/> 
@@ -462,7 +462,32 @@ func showToast(vc: UIViewController, toastMode: ToastMode = .NORMAL, message: St
     })
 }
 ```
+### 2.2. Podfile
 
+```
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'PulmuoneSimpleAuthSample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PulmuoneSimpleAuthSample
+  pod 'SwiftKeychainWrapper'
+  pod 'SwiftyBeaver'
+  pod 'SwiftyUserDefaults'
+
+  target 'PulmuoneSimpleAuthSampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PulmuoneSimpleAuthSampleUITests' do
+    # Pods for testing
+  end
+
+end
+```
 ---
 
 ## 3. 샘플 앱 메인화면
