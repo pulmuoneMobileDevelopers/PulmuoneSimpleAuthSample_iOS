@@ -1,9 +1,12 @@
 # * 풀무원 간편인증 및  앱 접근권한 샘플 앱  
 
-## iOS 기반의 샘플 앱으로 간편인증(생체인증/4자리 간편번호) 및 앱 접근권한 화면과 기능 사용을 위한 소스코드 및 모듈을 제공합니다.
+## iOS 기반의 샘플 앱으로 간편인증(생체인증/4자리 간편번호) 및 앱 접근권한 화면과 기능 사용을 위한 소스코드 및 모듈을 제공하며 Xcode 14에서 작성되었습니다.
 ## <span style="color:red">**PmoViewController를 상속받아 사용하시고, 자세한 내용은 샘플앱을 참조해주시기 바랍니다.**</span>
 
 ## 1. 샘플 앱의 그룹별 및 주요 파일 설명
+> ## 하기 설명하는 그룹 폴더를 Drag & Drop 하여 해당 프로젝트에 Create Groups으로 Copy items if needed 옵션을 체크 후 Finish 하여 추가해서 사용하면 됩니다.
+
+<img src="./ScreenShot/copy_items_if_needed.png" width="500px" title="copy_items_if_needed" align="top"/> 
 
 ### 1.1. PulmuonePermission 그룹
 > ### SwiftUI로 작성된 코드로 다음과 같이 앱 접근권한 안내 화면을 제공하고 권한 요청을 위한 기능을 포함하고 있습니다. 
