@@ -108,6 +108,7 @@ class PmoViewController: UIViewController {
 //        }
 //    }
         
+    // MARK: 취소, 확인 버튼이 있는 팝업
     public func showAlertPopup(popupText: String , okBtnName: String, cancelBtnName: String, completionHandler: @escaping (Bool) -> Void){
         print("showBasicPopup1")
         let popvc = PopupVC(popupType: .cancelAndOK, popupText: popupText, cancelBtnName: cancelBtnName, okBtnName: okBtnName, completionHandler: completionHandler)
@@ -117,6 +118,7 @@ class PmoViewController: UIViewController {
         }
     }
     
+    // MARK: 확인 버튼만 있는 팝업
     public func showAlertPopup(popupText: String, okBtnName: String, completionHandler: @escaping (Bool) -> Void){
         print("showBasicPopup2")
         let popvc = PopupVC(popupType: .onlyOK, popupText: popupText, okOneBtnName: okBtnName, completionHandler: completionHandler)

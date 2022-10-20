@@ -8,7 +8,7 @@
 import UIKit
 import SwiftKeychainWrapper
 import SwiftyUserDefaults
-import SwiftUI
+import SwiftUI //앱 접근권한 화면은 SwiftUI로 작성되어서 추가해야 함.
 
 class ViewController: PmoViewController, BioLoginSelectVCDelegate {
     
@@ -50,10 +50,11 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
         self.setObserver()
         self.setLanguage()
         
-        //로그인 정보가 일치한다고 가정하고 키체인에 저장하여 로그인 시도할 때 비교
+        // 로그인 정보가 일치한다고 가정하고 키체인에 저장하여 로그인 시도할 때 비교
         KeychainWrapper.standard.set(userId, forKey: Constants.LoginInfoKeychain.userIdKey)
         KeychainWrapper.standard.set(loginPw, forKey: Constants.LoginInfoKeychain.userPwKey)
         
+        // 테스트를 위해 앱 실행시 항상 제거
         removeKeyChain()
     }
     
@@ -143,9 +144,9 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                 }
                 
                 self.showAlertPopup(popupText: _message, okBtnName: self.confirmMessage, cancelBtnName: self.cancelMessage) { Bool in
+                    // 생체인증 및 간편번호 설정값 초기화
                     Defaults[key: Constants.userDefault_BioAuthLoginKey] = false
                     Defaults[key: Constants.userDefault_PinCodeLoginKey] = false
-                    //self.moveToLoginPage()
                     
                     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
                         self.getRootViewController()?.dismiss(animated: false, completion: nil)
@@ -154,7 +155,6 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                         }
                     }
                     Defaults[key: Constants.userDefault_IsLoginKey] = false
-                    //self.protectView.removeFromSuperview()
                     self.getTopMostViewController()?.dismiss(animated: false, completion: nil)
                 }
                 
@@ -310,7 +310,7 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                             vc.dismiss(animated: false, completion: nil)
                         }
                     }
-                } notMatchCallback: { notMatchCount in // 일치하지 않는 횟수 콜백
+                } notMatchCallback: { notMatchCount in // 일치하지 않는 횟수 콜백, 최대 5번 시도
                     self.log.error("notMatchCount: \(notMatchCount)")
                     
                     if (notMatchCount >= Constants.passCodeFailMaxCount) {
@@ -328,7 +328,7 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
         }
     }
     
-    // MARK: - 생체인식 초기화 될 경우, 생체인증/간편번호 선택 화면 보임
+    // MARK: - 간편인증 초기화 될 경우, 생체인증/간편번호 선택 화면 보임
     private func showBioLoginSelectVC(isBackButtonHidden: Bool = true, completion: @escaping () -> Void) {
         log.verbose("isBackButtonHidden: \(isBackButtonHidden)")
         DispatchQueue.main.async {
@@ -345,10 +345,12 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
         }
     }
     
+    // MARK: - 생체인증 기능 제공 및 등록 여부 조회, 등록 요청
     private func checkKeyChianSaved(completion: @escaping () -> Void) {
         let retrievedUserId: String? = KeychainWrapper.standard.string(forKey: Constants.LoginInfoKeychain.userIdKey)
         log.verbose("retrievedUserId = \(String(describing: retrievedUserId))")
         
+        // 생체인증과 간편번호 인증이 아닐 경우, 또는 저장된 로그인 아이디 (user id)가 없을 경우
         if ((!Defaults[key: Constants.userDefault_BioAuthLoginKey] && !Defaults[key: Constants.userDefault_PinCodeLoginKey]) || retrievedUserId == nil || retrievedUserId == "") {
             DispatchQueue.main.async {
                 /**

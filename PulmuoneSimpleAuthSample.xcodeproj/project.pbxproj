@@ -77,6 +77,7 @@
 		C165FFB328E6CCB300339D4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFB228E6CCB300339D4C /* Constants.swift */; };
 		C165FFC528E6D05B00339D4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C165FFC728E6D05B00339D4C /* Localizable.strings */; };
 		C165FFCD28E6D13300339D4C /* I18NStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165FFCC28E6D13300339D4C /* I18NStrings.swift */; };
+		C1CC02CD29010DCC00EBE431 /* pulmuone_permisson.png in Resources */ = {isa = PBXBuildFile; fileRef = C1CC02CC29010DCC00EBE431 /* pulmuone_permisson.png */; };
 		EC78AE15191DB032FEEEA1F1 /* Pods_PulmuoneSimpleAuthSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05602BFFE2AE5AA0A4F9E2D2 /* Pods_PulmuoneSimpleAuthSample.framework */; };
 		FC2CF7B70A6B2883C03EA05D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73CD57112EDE6DA0282CA9D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework */; };
 /* End PBXBuildFile section */
@@ -182,6 +183,7 @@
 		C165FFCA28E6D09B00339D4C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C165FFCB28E6D0A000339D4C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C165FFCC28E6D13300339D4C /* I18NStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I18NStrings.swift; sourceTree = "<group>"; };
+		C1CC02CC29010DCC00EBE431 /* pulmuone_permisson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pulmuone_permisson.png; sourceTree = "<group>"; };
 		C73CD57112EDE6DA0282CA9D /* Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulmuoneSimpleAuthSample_PulmuoneSimpleAuthSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D271E116B4996F3ED4635BCD /* Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSampleTests/Pods-PulmuoneSimpleAuthSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB10B4472F1788257C91DC37 /* Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSampleTests/Pods-PulmuoneSimpleAuthSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 		C14B1C3D28E6AD4C00901CC0 = {
 			isa = PBXGroup;
 			children = (
+				C13057F128F019FC000AA515 /* README.md */,
 				C14B1C4828E6AD4C00901CC0 /* PulmuoneSimpleAuthSample */,
 				C14B1C5F28E6AD5000901CC0 /* PulmuoneSimpleAuthSampleTests */,
 				C14B1C6928E6AD5000901CC0 /* PulmuoneSimpleAuthSampleUITests */,
@@ -326,13 +329,13 @@
 			isa = PBXGroup;
 			children = (
 				C13057BD28ED71DE000AA515 /* PulmuonePermission */,
-				C14B1C7928E6ADB500901CC0 /* font */,
-				C14B1C8C28E6AF0500901CC0 /* modulebio */,
-				C165FF8728E6C8C700339D4C /* Extensions */,
-				C165FF8228E6C87900339D4C /* Popup */,
+				C14B1C7928E6ADB500901CC0 /* Font */,
+				C14B1C8C28E6AF0500901CC0 /* Modulebio */,
 				C165FF9128E6C97B00339D4C /* Passcode */,
-				C165FFA928E6CBB300339D4C /* Login */,
+				C165FFA928E6CBB300339D4C /* AuthMethod */,
+				C165FF8228E6C87900339D4C /* Popup */,
 				C165FF8E28E6C91500339D4C /* Custom */,
+				C165FF8728E6C8C700339D4C /* Extensions */,
 				C14B1C4928E6AD4C00901CC0 /* AppDelegate.swift */,
 				C14B1C4B28E6AD4C00901CC0 /* SceneDelegate.swift */,
 				C14B1C4D28E6AD4C00901CC0 /* ViewController.swift */,
@@ -344,7 +347,7 @@
 				C165FFCC28E6D13300339D4C /* I18NStrings.swift */,
 				C14B1C5428E6AD4F00901CC0 /* LaunchScreen.storyboard */,
 				C14B1C5728E6AD4F00901CC0 /* Info.plist */,
-				C13057F128F019FC000AA515 /* README.md */,
+				C1CC02CB29010DCC00EBE431 /* ScreenShot */,
 			);
 			path = PulmuoneSimpleAuthSample;
 			sourceTree = "<group>";
@@ -366,7 +369,7 @@
 			path = PulmuoneSimpleAuthSampleUITests;
 			sourceTree = "<group>";
 		};
-		C14B1C7928E6ADB500901CC0 /* font */ = {
+		C14B1C7928E6ADB500901CC0 /* Font */ = {
 			isa = PBXGroup;
 			children = (
 				C14B1C8028E6ADFB00901CC0 /* Pretendard-Black.otf */,
@@ -379,10 +382,10 @@
 				C14B1C7D28E6ADFA00901CC0 /* Pretendard-SemiBold.otf */,
 				C14B1C7F28E6ADFB00901CC0 /* Pretendard-Thin.otf */,
 			);
-			path = font;
+			path = Font;
 			sourceTree = "<group>";
 		};
-		C14B1C8C28E6AF0500901CC0 /* modulebio */ = {
+		C14B1C8C28E6AF0500901CC0 /* Modulebio */ = {
 			isa = PBXGroup;
 			children = (
 				C14B1C8D28E6AF0500901CC0 /* extension */,
@@ -394,7 +397,7 @@
 				C14B1C9728E6AF0500901CC0 /* BioProtocol.swift */,
 				C14B1C9828E6AF0500901CC0 /* BioResult.swift */,
 			);
-			path = modulebio;
+			path = Modulebio;
 			sourceTree = "<group>";
 		};
 		C14B1C8D28E6AF0500901CC0 /* extension */ = {
@@ -495,7 +498,7 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		C165FFA928E6CBB300339D4C /* Login */ = {
+		C165FFA928E6CBB300339D4C /* AuthMethod */ = {
 			isa = PBXGroup;
 			children = (
 				C165FFAB28E6CBD100339D4C /* BioLoginSelectVC.swift */,
@@ -503,7 +506,15 @@
 				C165FFAC28E6CBD100339D4C /* BioOrNumberLoginBgVC.swift */,
 				C165FFAD28E6CBD100339D4C /* BioOrNumberLoginBgVC.xib */,
 			);
-			path = Login;
+			path = AuthMethod;
+			sourceTree = "<group>";
+		};
+		C1CC02CB29010DCC00EBE431 /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				C1CC02CC29010DCC00EBE431 /* pulmuone_permisson.png */,
+			);
+			path = ScreenShot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,6 +644,7 @@
 				C13057E928ED71DE000AA515 /* pmo_strings.strings in Resources */,
 				C14B1C8428E6ADFB00901CC0 /* Pretendard-ExtraBold.otf in Resources */,
 				C13057DC28ED71DE000AA515 /* Assets.xcassets in Resources */,
+				C1CC02CD29010DCC00EBE431 /* pulmuone_permisson.png in Resources */,
 				C165FFA728E6C97B00339D4C /* Passcode.storyboard in Resources */,
 				C14B1C8328E6ADFB00901CC0 /* Pretendard-ExtraLight.otf in Resources */,
 				C165FFC528E6D05B00339D4C /* Localizable.strings in Resources */,
