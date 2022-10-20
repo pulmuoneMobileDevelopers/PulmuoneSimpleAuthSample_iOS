@@ -362,8 +362,8 @@ private func showBioLoginSelectVC(isBackButtonHidden: Bool = true, completion: @
 
 ### 1.6. Popup 그룹
 > ### 팝업 화면과 로직이 구현되어 있습니다. PmoViewController에 호출 함수가 구현되어 있습니다. 
-<img src="./ScreenShot/popup.png" width="250px" title="passcode" align="top"/> 
-<img src="./ScreenShot/pulmuone_permission_example2.png" width="300px" title="pulmuone_permission_example2"/>
+<img src="./PulmuoneSimpleAuthSample/ScreenShot/popup.png" width="250px" title="passcode" align="top"/> 
+<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permission_example2.png" width="300px" title="pulmuone_permission_example2"/>
 
 ```
 // MARK: 취소, 확인 버튼이 있는 팝업
