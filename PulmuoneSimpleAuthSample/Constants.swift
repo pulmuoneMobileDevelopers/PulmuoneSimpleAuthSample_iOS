@@ -20,6 +20,7 @@ struct Constants {
     static let userDefault_BioAuthLoginKey = DefaultsKey<Bool>("bioAuthLoginKey", defaultValue: false)
     static let userDefault_IsLoginKey = DefaultsKey<Bool>("IsLoginKey", defaultValue: false)
     
+    // 최대 간편번호 인증 실패 횟수
     static let passCodeFailMaxCount = 5
     // 백그라운드에서 포어그라운드로 전환될 경우 최대 설정된 초를 초과할 경우 간편인증을 시도
     static let authActiveMaxSeconds = 10 //초 60 * 30
@@ -57,13 +58,13 @@ struct Constants {
 }
 
 struct ServerURL {
-    static let devURL = URL(string: "http://10.21.7.27") // dev IP
-    static let devLoginProcessURL = URL(string: "http://10.21.7.27/login_process") // dev IP
-    static let devLoginURL = URL(string: "http://10.21.7.27/login") // dev IP
-    static let devMainURLString = "http://10.21.7.27/?lang="
+    static let devURL = URL(string: "http://1.1.1.1") // dev IP
+    static let devLoginProcessURL = URL(string: "http://1.1.1.1/login_process") // dev IP
+    static let devLoginURL = URL(string: "http://1.1.1.1/login") // dev IP
+    static let devMainURLString = "http://1.1.1.1/?lang="
     
-    static let liveURL = URL(string: "https://rmffhqjftldpvmdptm.pulmuone.com") // live DNS 이게 진짜 라이브임
-    static let liveLoginProcessURL = URL(string: "https://rmffhqjftldpvmdptm.pulmuone.com/login_process") // live DNS 이게 진짜 라이브임
-    static let liveLoginURL = URL(string: "http://rmffhqjftldpvmdptm.pulmuone.com/login") // dev IP
-    static let liveMainURLString = "http://rmffhqjftldpvmdptm.pulmuone.com/?lang="
+    static let liveURL = URL(string: "https://test.pulmuone.com") // live DNS 이게 진짜 라이브임
+    static let liveLoginProcessURL = URL(string: "https://test.pulmuone.com/login_process") // live DNS 이게 진짜 라이브임
+    static let liveLoginURL = URL(string: "http://test.pulmuone.com/login") // dev IP
+    static let liveMainURLString = "http://test.pulmuone.com/?lang="
 }
