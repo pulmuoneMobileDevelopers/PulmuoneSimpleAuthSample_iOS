@@ -8,9 +8,9 @@
 ### 1.1. PulmuonePermission 그룹
 > ### SwiftUI로 작성된 코드로 다음과 같이 앱 접근권한 안내 화면을 제공하고 권한 요청을 위한 기능을 포함하고 있습니다. 
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permisson.png" width="300px" title="pulmuone_permisson" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
+<img src="./ScreenShot/pulmuone_permisson.png" width="300px" title="pulmuone_permisson" align="top"/> 
+<img src="./ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
+<img src="./ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
 
 > ### 사용법은 다음과 같으며 샘플앱의 ViewController에서 showPermissionList 함수를 참조해주세요.
 ```
@@ -101,13 +101,13 @@ private func requestNecessaryPermissions() {
 ### 1.2. Font 그룹
 > ### 무료 폰트인 Pretendard를 기본으로 하며, info.plist에 다음과 같이 추가해주세요.
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pretendard.png" width="250px" title="pretendard" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pretendard_info_setting.png" width="500px" title="pretendard_info_setting" align="top"/> 
+<img src="./ScreenShot/pretendard.png" width="250px" title="pretendard" align="top"/> 
+<img src="./ScreenShot/pretendard_info_setting.png" width="500px" title="pretendard_info_setting" align="top"/> 
 
 ### 1.3. Modulebio 그룹
 > ### iOS 생체인식 인증 (Face ID / Touch ID)을 쉽게 사용하기 위해 작성되었습니다. 
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/modulebio.png" width="190px" title="modulebio" align="top"/> 
+<img src="./ScreenShot/modulebio.png" width="190px" title="modulebio" align="top"/> 
 
 ```
 // MARK: - 생체인증 기능 제공 및 등록 여부 조회, 등록 요청
@@ -275,9 +275,9 @@ private func checkKeyChianSaved(completion: @escaping () -> Void) {
 ### 1.4. Passcode 그룹
 > ### 4자리 간편번호 설정 화면 제공 및 로직이 구현되어 있습니다. 간편번호 인증은 최대 5번까지 시도합니다.
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/passcode.png" width="250px" title="passcode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode1.png" width="250px" title="pincode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/passcode.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/pincode1.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
 
 ```
 // MARK: - 간편번호 입력 화면 보임
@@ -374,9 +374,9 @@ private func showPassCodeVC(mode: PasscodeViewController.Mode) {
 ### 1.5. AuthMethod 그룹
 > ### 인증 방식 선택 화면과 로직이 구현되어 있으며 생체인증시 백그라운드 이미지를 제공합니다.
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/auth_method.png" width="250px" title="passcode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/auth_select_method.png" width="250px" title="passcode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/auth_select_bg.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/auth_method.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/auth_select_method.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/auth_select_bg.png" width="250px" title="passcode" align="top"/> 
 
 ```
 // MARK: - 간편인증 초기화 될 경우, 생체인증/간편번호 선택 화면 보임
@@ -400,8 +400,8 @@ private func showBioLoginSelectVC(isBackButtonHidden: Bool = true, completion: @
 ### 1.6. Popup 그룹
 > ### 팝업 화면과 로직이 구현되어 있습니다. PmoViewController에 호출 함수가 구현되어 있습니다. 
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/popup.png" width="250px" title="passcode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
+<img src="./ScreenShot/popup.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
 
 ```
 // MARK: 취소, 확인 버튼이 있는 팝업
@@ -430,8 +430,8 @@ public func showAlertPopup(popupText: String, okBtnName: String, completionHandl
 ## 2. 기타
 ### 2.1. PmoViewController에 Toast가 구현되어 있습니다.
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode3.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/pincode3.png" width="250px" title="pincode" align="top"/> 
 
 ```
 static let DELAY_SHORT = 2.0//1.5
@@ -496,10 +496,10 @@ end
 ## 3. 샘플 앱 메인화면
 > ### 다음과 같이 샘플 앱은 구현되어 있습니다. 
 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/main.png" width="250px" title="pincode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/auth_select_method.png" width="250px" title="passcode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/auth_select_bg.png" width="250px" title="passcode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode1.png" width="250px" title="pincode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
-<img src="./PulmuoneSimpleAuthSample/ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
+<img src="./ScreenShot/main.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/auth_select_method.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/auth_select_bg.png" width="250px" title="passcode" align="top"/> 
+<img src="./ScreenShot/pincode1.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
+<img src="./ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
+<img src="./ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
