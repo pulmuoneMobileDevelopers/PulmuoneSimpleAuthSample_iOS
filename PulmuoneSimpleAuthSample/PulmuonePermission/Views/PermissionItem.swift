@@ -75,12 +75,13 @@ struct PermissionItem: View {
     }
     
     func getItemHeight() -> CGFloat{
-        var itemHeight: CGFloat = 40
-        if isNecessary == true {
-            itemHeight = 48
-        }
+        // 필수 / 선택 권한의 크기 높이 차이가 동일하게 변경됨.
+//        var itemHeight: CGFloat = 40
+//        if isNecessary == true {
+//            itemHeight = 48
+//        }
         
-        return itemHeight
+        return 48
     }
     
     func getLocaizedString(data: String) -> String {
@@ -137,7 +138,7 @@ struct PermissionItem: View {
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_location"),
                 subString: getLocaizedString(data: "pmo_location_sub"),
-                imageMain: permissionImgString ?? "place")
+                imageMain: permissionImgString ?? "location")
         case .biometric_auth :
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_biometric_auth"),
