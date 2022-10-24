@@ -70,7 +70,7 @@ enum Permissions {
 ```
 
 > ### 사용법은 다음과 같으며 샘플앱의 ViewController에서 showPermissionList 함수를 참조해주세요.
-> ### 위에서 정의한 디폴트 접근권한 외에 추가하려면 permissionListNecessaryEtc, permissionListOptionalEtc에 아래 예제처럼 추가해주세요.
+> ### 위에서 정의한 디폴트 접근권한 외에 추가하려면 permissionListNecessaryEtc, permissionListOptionalEtc에 아래 예제처럼 추가해주시고 추가된 권한에 따른 아이콘 요청을 담당자를 통해 해주시면 제공해드리겠습니다.
 ```
 import SwiftUI //앱 접근권한 화면은 SwiftUI로 작성되어서 추가해야 함.
 
