@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B3929ABE1B5FB54F0E31E63B /* Pods_PulmuoneSimpleAuthSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C8682959475DA29EB3F93D /* Pods_PulmuoneSimpleAuthSampleTests.framework */; };
 		C13057DA28ED71DE000AA515 /* PermissionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057BE28ED71DE000AA515 /* PermissionContentView.swift */; };
-		C13057DB28ED71DE000AA515 /* PulmuonePermissionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057BF28ED71DE000AA515 /* PulmuonePermissionApp.swift */; };
 		C13057DC28ED71DE000AA515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13057C028ED71DE000AA515 /* Assets.xcassets */; };
 		C13057DD28ED71DE000AA515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13057C228ED71DE000AA515 /* Preview Assets.xcassets */; };
 		C13057DE28ED71DE000AA515 /* PopupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13057C328ED71DE000AA515 /* PopupState.swift */; };
@@ -121,7 +120,6 @@
 		90C8682959475DA29EB3F93D /* Pods_PulmuoneSimpleAuthSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulmuoneSimpleAuthSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83D858FB4524ECFA8CB55C8 /* Pods-PulmuoneSimpleAuthSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulmuoneSimpleAuthSample.release.xcconfig"; path = "Target Support Files/Pods-PulmuoneSimpleAuthSample/Pods-PulmuoneSimpleAuthSample.release.xcconfig"; sourceTree = "<group>"; };
 		C13057BE28ED71DE000AA515 /* PermissionContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionContentView.swift; sourceTree = "<group>"; };
-		C13057BF28ED71DE000AA515 /* PulmuonePermissionApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulmuonePermissionApp.swift; sourceTree = "<group>"; };
 		C13057C028ED71DE000AA515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13057C228ED71DE000AA515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C13057C328ED71DE000AA515 /* PopupState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupState.swift; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				C13057BE28ED71DE000AA515 /* PermissionContentView.swift */,
-				C13057BF28ED71DE000AA515 /* PulmuonePermissionApp.swift */,
 				C13057C028ED71DE000AA515 /* Assets.xcassets */,
 				C13057C128ED71DE000AA515 /* Preview Content */,
 				C13057C328ED71DE000AA515 /* PopupState.swift */,
@@ -856,7 +853,6 @@
 				C13057E028ED71DE000AA515 /* PermissionLocation.swift in Sources */,
 				C14B1C9E28E6AF0500901CC0 /* BioManager.swift in Sources */,
 				C13057EC28ED71DE000AA515 /* BlurView.swift in Sources */,
-				C13057DB28ED71DE000AA515 /* PulmuonePermissionApp.swift in Sources */,
 				C165FF8528E6C88F00339D4C /* PopupVC.swift in Sources */,
 				C13057E428ED71DE000AA515 /* PermissionCamera.swift in Sources */,
 				C13057EF28ED71DE000AA515 /* PermissionPopup.swift in Sources */,

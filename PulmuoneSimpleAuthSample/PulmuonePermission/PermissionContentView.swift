@@ -111,7 +111,7 @@ struct PermissionContentView_Previews: PreviewProvider {
     static var previews: some View {
         PermissionContent(permissionListNecessary: [
                                                     Permissions.calendar,
-                                                    Permissions.network],
+                                                    Permissions.camera],
                           permissionListOptional: [Permissions.notice,
                                                    Permissions.location,
                                                    Permissions.biometric_auth],

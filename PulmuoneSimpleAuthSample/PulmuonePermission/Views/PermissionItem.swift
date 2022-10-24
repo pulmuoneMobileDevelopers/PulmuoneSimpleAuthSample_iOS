@@ -175,18 +175,11 @@ struct PermissionItem: View {
                 mainString: getLocaizedString(data: "pmo_speech_recognition"),
                 subString: getLocaizedString(data: "pmo_speech_recognition_sub"),
                 imageMain: permissionImgString ?? "record_voice")
-        
-//        case .phone :
+//        case .network:
 //            returnData = PermissionData(
-//                mainString: getLocaizedString(data: "pmo_phone"),
-//                subString: getLocaizedString(data: "pmo_phone_sub"),
-//                imageMain: permissionImgString ?? "list_alt")
-            
-        case .network:
-            returnData = PermissionData(
-                mainString: getLocaizedString(data: "pmo_network"),
-                subString: getLocaizedString(data: "pmo_network_sub"),
-                imageMain: permissionImgString ?? "wifi")
+//                mainString: getLocaizedString(data: "pmo_network"),
+//                subString: getLocaizedString(data: "pmo_network_sub"),
+//                imageMain: permissionImgString ?? "wifi")
         case .history:
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_history"),

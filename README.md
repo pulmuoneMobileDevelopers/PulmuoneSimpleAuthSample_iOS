@@ -15,7 +15,62 @@
 <img src="./ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
 <img src="./ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
 
+> ### 디폴트 접근권한은 PermissionContent.swift에 정의되어 있습니다. 
+```
+enum Permissions {
+    case bluetooth, calendar, callkit,
+         camera, contacts, health, homekit,
+         location, media_library, microphone,
+         motion, photos, /*network*,*/
+         speech_recognition, notice,
+         biometric_auth, history, etc
+    //    phone, 전화기록은 iOS 개인정보 정책상 가져올 수 없습니다.
+    var toString: String {
+        switch self {
+            
+        case .bluetooth:
+            return "블루투스"
+        case .calendar:
+            return "달력"
+        case .callkit:
+            return "전화"
+        case .camera:
+            return "카메라 촬영"
+        case .contacts:
+            return "연락처"
+        case .health:
+            return "헬스 정보"
+        case .homekit:
+            return "홈킷"
+        case .location:
+            return "위치 정보"
+        case .media_library:
+            return "미디어 저장소"
+        case .microphone:
+            return "마이크"
+        case .motion:
+            return "모션"
+        case .photos:
+            return "사진 저장소"
+//        case .network:
+//            return "네트웤"
+        case .speech_recognition:
+            return "녹음"
+        case .notice:
+            return "푸시 알림"
+        case .biometric_auth:
+            return "생체 인증"
+        case .history:
+            return "앱 기록"
+        case .etc:
+            return "기타"
+        }
+    }
+}
+```
+
 > ### 사용법은 다음과 같으며 샘플앱의 ViewController에서 showPermissionList 함수를 참조해주세요.
+> ### 위에서 정의한 디폴트 접근권한 외에 추가하려면 permissionListNecessaryEtc, permissionListOptionalEtc에 아래 예제처럼 추가해주세요.
 ```
 import SwiftUI //앱 접근권한 화면은 SwiftUI로 작성되어서 추가해야 함.
 
@@ -23,81 +78,73 @@ import SwiftUI //앱 접근권한 화면은 SwiftUI로 작성되어서 추가해
 
 // MARK: - 앱 접근권한 목록 보여주기
 private func showPermissionList() {
-    var contentView: UIHostingController<PermissionContentView>?
-    // 퍼미션 팝업 호출을 Observe 하는 ObservedObject 생성
-    @ObservedObject var popupState = PopupState()
-    popupState.setShow(showing: true)
-    
-    // 퍼미션 팝업 설정.
-    let permissionContentView = PermissionContentView (popupState: popupState,
-                            // 팝업에 노출될 필수 권한 리스트
-                            permissionListNecessary: [Permissions.contacts,
-                                                      Permissions.history,
-                                                      Permissions.location,
-                                                      Permissions.callkit,
-                                                      Permissions.camera],
-                            // 팝업에 노출 될 선택 권한 리스트
-                            permissionListOptional: [Permissions.media_library,
-                                                    Permissions.photos,
-                                                    Permissions.microphone,
-                                                    Permissions.calendar],
-                            // 접근권한 수동 변경 방법에 표시될 문구
-                            permissionSettingDesc: "앱 설정 위치",
-                            // 확인 버튼 선택 시 수행할 작업.
-                            onConfirmPermission: {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-            contentView!.view.removeFromSuperview()
-        }
-    })
-    
-    contentView = UIHostingController(rootView: permissionContentView)
-    contentView!.view.backgroundColor = UIColor.clear
-    contentView!.modalPresentationStyle = .fullScreen
-    self.addChild(contentView!)
-    self.view.addSubview((contentView?.view)!)
-    
-    contentView?.view.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-        contentView!.view.widthAnchor.constraint(equalTo: self.view.widthAnchor),
-        contentView!.view.heightAnchor.constraint(equalTo: self.view.heightAnchor),
-        contentView!.view.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-        contentView!.view.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)])
-}
+var contentView: UIHostingController<PermissionContentView>?
+// 퍼미션 팝업 호출을 Observe 하는 ObservedObject 생성
+@ObservedObject var popupState = PopupState()
+popupState.setShow(showing: true)
 
-// MARK: - 앱 접근 권한 요청하기
-private func requestNecessaryPermissions() {
-    let permissionManager = PermissionManager()
+// 퍼미션 팝업 설정.
+let permissionContentView = PermissionContentView (popupState: popupState,
+                        // 팝업에 노출될 필수 권한 리스트
+                        permissionListNecessary: [Permissions.contacts,
+                                                    Permissions.history,
+                                                    Permissions.location,
+                                                    Permissions.callkit,
+                                                    Permissions.camera],
+                        // 팝업에 노출 될 선택 권한 리스트
+                        permissionListOptional: [Permissions.media_library,
+                                                Permissions.photos,
+                                                Permissions.microphone,
+                                                Permissions.calendar],
+                                                    
+                        /**
+                        * 정의 되어 있는 권한 외에 노출해야할 내용이 있을 경우
+                        * permissionListNecessaryEtc, permissionListOptionalEtc 를 통해 정의 가능
+                        */                               
+                        permissionListNecessaryEtc: [
+                        PermissionItem(
+                            // 노출할 이미지 (asset 에 추가 되어 있어야 함.
+                            permissionImgString: "camera",
+                            titleMain: "메인 텍스트 1",
+                            titleSub: "서브 텍스트 2"
+                        )],
+                        permissionListOptionalEtc: [
+                        PermissionItem(
+                            // 노출할 이미지 (asset 에 추가 되어 있어야 함.
+                            permissionImgString: "contacts",
+                            titleMain: "메인 텍스트 1",
+                            titleSub: "서브 텍스트 2"
+                        )],
+                        
+                        // 접근권한 수동 변경 방법에 표시될 문구
+                        permissionSettingDesc: "앱 설정 위치",
+                        // 변경할 이미지 리스트 (Dictionary 형태, Permissions: 노출할 Icon text, 필수 값은 아니며 입력 없을 시 기본 아이콘 노출 됨
+//                               permissionImage: [Permissions.camera: "camera_test",
+//                                                 Permissions.photos: "photo_test",
+//                                                 Permissions.microphone: "mic_test",
+//                                                 Permissions.location: "location_test"],
+                        // 아이콘 색상 및 백그라운드 색상, 필수 값 아니며 입력 없을 시 기본 색상 노출 됨.
+//                               iconForegroundColor: Color.black,
+//                               iconBackgroundColor: Color.pulmuone_def,
+                        // 확인 버튼 선택 시 수행할 작업.
+                        onConfirmPermission: {
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+        contentView!.view.removeFromSuperview()
+    }
+})
 
-    for permissionItem in permissionNecessary {
-        let permissionData = permissionManager.getPermissionAuth(permissionItem: permissionItem)
-        
-        if (permissionData != .authorized ) {
-            
-            permissionManager
-                .requestPermissions(permission: [permissionItem],
-                                    isNacessary: true,
-                                    onConfirmPermission: { isSuccess, callbackMessage, isNecessary in
-                    if (isSuccess) {
-                        self.requestNecessaryPermissions()
-                    }
-                    else {
-                        let nessaryMessage = "다음의 필수 권한이 거절 되었습니다. [" + permissionItem.toString + "] 권한 요청을 위해 설정 화면으로 이동합니다."
-                        self.showAlertPopup(popupText: nessaryMessage, okBtnName: self.confirmMessage, cancelBtnName: self.cancelMessage) { Bool in
-                            
-                            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-                                self.getRootViewController()?.dismiss(animated: false, completion: nil)
-                                if (Bool) {
-                                    self.toAppSetting() //Device 설정 화면 이동
-                                }
-                            }
-                            
-                            self.getTopMostViewController()?.dismiss(animated: false, completion: nil)
-                        }
-                    }
-                })
-            return
-        }
-    }        
+contentView = UIHostingController(rootView: permissionContentView)
+contentView!.view.backgroundColor = UIColor.clear
+contentView!.modalPresentationStyle = .fullScreen
+self.addChild(contentView!)
+self.view.addSubview((contentView?.view)!)
+
+contentView?.view.translatesAutoresizingMaskIntoConstraints = false
+NSLayoutConstraint.activate([
+    contentView!.view.widthAnchor.constraint(equalTo: self.view.widthAnchor),
+    contentView!.view.heightAnchor.constraint(equalTo: self.view.heightAnchor),
+    contentView!.view.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+    contentView!.view.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)])
 }
 ```
 

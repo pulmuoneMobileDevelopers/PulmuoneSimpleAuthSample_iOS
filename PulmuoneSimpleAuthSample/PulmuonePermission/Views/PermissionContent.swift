@@ -12,7 +12,7 @@ enum Permissions {
     case bluetooth, calendar, callkit,
          camera, contacts, health, homekit,
          location, media_library, microphone,
-         motion, photos, network,
+         motion, photos, /*network*,*/
          speech_recognition, notice,
          biometric_auth, history, etc
     //    phone, 전화기록은 iOS 개인정보 정책상 가져올 수 없습니다.
@@ -43,8 +43,8 @@ enum Permissions {
             return "모션"
         case .photos:
             return "사진 저장소"
-        case .network:
-            return "네트웤"
+//        case .network:
+//            return "네트웤"
         case .speech_recognition:
             return "녹음"
         case .notice:
@@ -222,7 +222,7 @@ struct PermissionContent_Previews: PreviewProvider {
     static var previews: some View {
         PermissionContent(permissionListNecessary: [
             Permissions.calendar,
-            Permissions.network],
+            Permissions.camera],
                           permissionListOptional: [Permissions.notice,
                                    Permissions.location,
                                    Permissions.biometric_auth],
