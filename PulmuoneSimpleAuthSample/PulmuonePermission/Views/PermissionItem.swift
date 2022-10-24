@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct PermissionItem: View {
-    var permission: Permissions
+    var permission: Permissions?
     var permissionImgString: String?
     var iconForegroundColor: Color?
     var iconBackgroundColor: Color?
     var textSize: TextSize?
-    var isNecessary: Bool
+    var isNecessary: Bool?
+    var titleMain: String?
+    var titleSub: String?
         
     var body: some View {
-        let permissionData = getPermissonData()
+        
+        let permissionData = getPermissonData(
+            titlsMain: titleMain,
+            titleSub: titleSub,
+            permissionImgString: permissionImgString)
+        
         let itemHeight = getItemHeight()
         let stringSize = getTextSize(textSize: textSize)
         
         HStack {
-            if (isNecessary) {
+//            if (isNecessary) {
                 ZStack(alignment: .center) {
                     Image(permissionData.imageMain ?? "warning")
                         .resizable()
@@ -35,7 +42,7 @@ struct PermissionItem: View {
 //                    .foregroundColor(Color.pulmuone_def)
                 .background(iconBackgroundColor ?? Color.icon_background)
                 .clipShape(Circle())
-            }
+//            }
             VStack (alignment: .leading, spacing: 0){
                 Text(permissionData.mainString)
                     .font(.custom("Pretendard-Medium", size: stringSize))
@@ -53,7 +60,7 @@ struct PermissionItem: View {
             }
             Spacer()
         }.frame(height: itemHeight)
-            .padding(.leading, 6)
+            .padding(.leading, 6.0)
     }
     
     func getTextSize(textSize: TextSize?) -> CGFloat {
@@ -85,7 +92,7 @@ struct PermissionItem: View {
         return returnData
     }
     
-    func getPermissonData() -> PermissionData {
+    func getPermissonData(titlsMain: String?, titleSub: String?, permissionImgString: String?) -> PermissionData {
         
         var returnData: PermissionData
         
@@ -110,7 +117,7 @@ struct PermissionItem: View {
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_camera"),
                 subString: getLocaizedString(data: "pmo_camera_sub"),
-                imageMain: permissionImgString ?? "photo")
+                imageMain: permissionImgString ?? "camera")
         case .contacts:
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_contacts"),
@@ -130,7 +137,7 @@ struct PermissionItem: View {
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_location"),
                 subString: getLocaizedString(data: "pmo_location_sub"),
-                imageMain: permissionImgString ?? "location")
+                imageMain: permissionImgString ?? "place")
         case .biometric_auth :
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_biometric_auth"),
@@ -140,12 +147,12 @@ struct PermissionItem: View {
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_media_library"),
                 subString: getLocaizedString(data: "pmo_media_library_sub"),
-                imageMain: permissionImgString ?? "folder_open")
+                imageMain: permissionImgString ?? "folder")
         case .notice:
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_notice"),
                 subString: getLocaizedString(data: "pmo_notice_sub"),
-                imageMain: permissionImgString ?? "chat_bubble")
+                imageMain: permissionImgString ?? "bell")
         case .microphone:
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_microphone"),
@@ -184,6 +191,16 @@ struct PermissionItem: View {
                 mainString: getLocaizedString(data: "pmo_history"),
                 subString: getLocaizedString(data: "pmo_history_sub"),
                 imageMain: permissionImgString ?? "history")
+        case .etc:
+            returnData = PermissionData(mainString: titleMain ?? "",
+                                        subString: titleSub ?? "",
+                                        imageMain: permissionImgString ?? ""
+            )
+        case .none:
+            returnData = PermissionData(mainString: titleMain ?? "",
+                                        subString: titleSub ?? "",
+                                        imageMain: permissionImgString ?? ""
+            )
         }
         
         return returnData
@@ -208,7 +225,7 @@ struct PermissionData {
 
 struct PermissionItem_Previews: PreviewProvider {
     static var previews: some View {
-        PermissionItem(permission: Permissions.photos, isNecessary: true)
+        PermissionItem(permission: Permissions.location, isNecessary: true)
     }
 }
 

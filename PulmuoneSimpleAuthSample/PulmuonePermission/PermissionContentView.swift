@@ -13,6 +13,8 @@ struct PermissionContentView: View {
     @ObservedObject var popupState : PopupState
     var permissionListNecessary: [Permissions]
     var permissionListOptional: [Permissions]
+    var permissionListNecessaryEtc: [PermissionItem]?
+    var permissionListOptionalEtc: [PermissionItem]?
     var permissionSettingDesc: String?
     var permissionImage: Dictionary<Permissions, String>?
     var iconForegroundColor: Color?
@@ -62,6 +64,8 @@ struct PermissionContentView: View {
                     
                     PermissionContent(permissionListNecessary: permissionListNecessary,
                                       permissionListOptional: permissionListOptional,
+                                      permissionListNecessaryEtc: permissionListNecessaryEtc,
+                                      permissionListOptionalEtc: permissionListOptionalEtc,
                                       setPermissionChangeTitle: permissionSettingDesc,
                                       iconForegroundColor: iconForegroundColor,
                                       iconBackgroundColor: iconBackgroundColor,

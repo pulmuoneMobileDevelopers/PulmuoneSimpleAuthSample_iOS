@@ -445,6 +445,25 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                                                         Permissions.photos,
                                                         Permissions.microphone,
                                                         Permissions.calendar],
+                                                           
+                               // 정의 되어 있는 권한 외에 노출해야할 내용이 있을 경우
+                               // permissionListNecessaryEtc, permissionListOptionalEtc 를 통해 정의 가능
+                               /**
+                               permissionListNecessaryEtc: [
+                                PermissionItem(
+                                    // 노출할 이미지 (asset 에 추가 되어 있어야 함.
+                                    permissionImgString: "camera",
+                                    titleMain: "메인 텍스트 1",
+                                    titleSub: "서브 텍스트 2"
+                                )],
+                               permissionListOptionalEtc: [
+                                PermissionItem(
+                                    // 노출할 이미지 (asset 에 추가 되어 있어야 함.
+                                    permissionImgString: "contacts",
+                                    titleMain: "메인 텍스트 1",
+                                    titleSub: "서브 텍스트 2"
+                                )],
+                                */
                                // 접근권한 수동 변경 방법에 표시될 문구
                                permissionSettingDesc: "앱 설정 위치",
                                // 변경할 이미지 리스트 (Dictionary 형태, Permissions: 노출할 Icon text, 필수 값은 아니며 입력 없을 시 기본 아이콘 노출 됨

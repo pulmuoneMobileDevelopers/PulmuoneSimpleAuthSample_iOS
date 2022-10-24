@@ -14,7 +14,7 @@ enum Permissions {
          location, media_library, microphone,
          motion, photos, network,
          speech_recognition, notice,
-         biometric_auth, history
+         biometric_auth, history, etc
     //    phone, 전화기록은 iOS 개인정보 정책상 가져올 수 없습니다.
     var toString: String {
         switch self {
@@ -53,6 +53,8 @@ enum Permissions {
             return "생체 인증"
         case .history:
             return "앱 기록"
+        case .etc:
+            return "기타"
         }
     }
 }
@@ -67,6 +69,8 @@ struct PermissionContent: View {
     var titleTxt: String?
     var permissionListNecessary: [Permissions]
     var permissionListOptional: [Permissions]
+    var permissionListNecessaryEtc: [PermissionItem]?
+    var permissionListOptionalEtc: [PermissionItem]?
     var setPermissionChangeTitle: String?
     var iconForegroundColor: Color?
     var iconBackgroundColor: Color?
@@ -125,6 +129,10 @@ struct PermissionContent: View {
                                    isNecessary: true)
                 }
                 
+                let cntNec: Int = permissionListNecessaryEtc?.count ?? 0
+                ForEach(0..<cntNec, id: \.self) { num in
+                    permissionListNecessaryEtc?[num]
+                }
                 
                 HStack {
                     
@@ -147,6 +155,11 @@ struct PermissionContent: View {
                                    textSize: textSize,
                                    isNecessary: true)
                 }// 기존 디자인이 필수 접근권한과 달랐지만, 동일하게 바뀜.
+                
+                let cntOpt: Int = permissionListOptionalEtc?.count ?? 0
+                ForEach(0..<cntOpt, id: \.self) { num in
+                    permissionListOptionalEtc?[num]
+                }
                 
                 HStack {
                     Text("접근권한 변경 방법")
