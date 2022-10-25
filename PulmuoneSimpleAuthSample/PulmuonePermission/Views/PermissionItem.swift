@@ -163,12 +163,12 @@ struct PermissionItem: View {
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_motion"),
                 subString: getLocaizedString(data: "pmo_motion_sub"),
-                imageMain: permissionImgString ?? "motion_sensor")
+                imageMain: permissionImgString ?? "motion")
         case .photos:
             returnData = PermissionData(
                 mainString: getLocaizedString(data: "pmo_photos"),
                 subString: getLocaizedString(data: "pmo_photos_sub"),
-                imageMain: permissionImgString ?? "photo_library")
+                imageMain: permissionImgString ?? "photo")
             
         case .speech_recognition:
             returnData = PermissionData(
