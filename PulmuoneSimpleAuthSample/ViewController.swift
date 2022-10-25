@@ -452,21 +452,21 @@ class ViewController: PmoViewController, BioLoginSelectVCDelegate {
                                 */
                                permissionListNecessaryEtc: [
                                 PermissionItem(
-                                    // 노출할 이미지 (asset 에 추가 되어 있어야 함.
-                                    permissionImgString: "camera",
-                                    titleMain: "메인 텍스트 1",
-                                    titleSub: "서브 텍스트 2"
+                                    // 노출할 이미지 (asset 에 추가 되어 있어야 함.)
+                                    permissionImgString: "camera", //PulmuonePermisson 그룹의 Assets에 추가한 권한 이미지명
+                                    titleMain: "추가 필수 권한 타이틀",
+                                    titleSub: "추가 필수 권한 설명"
                                 )],
                                permissionListOptionalEtc: [
                                 PermissionItem(
-                                    // 노출할 이미지 (asset 에 추가 되어 있어야 함.
-                                    permissionImgString: "contacts",
-                                    titleMain: "메인 텍스트 1",
-                                    titleSub: "서브 텍스트 2"
+                                    // 노출할 이미지 (asset 에 추가 되어 있어야 함.)
+                                    permissionImgString: "contacts", //PulmuonePermisson 그룹의 Assets에 추가한 권한 이미지명
+                                    titleMain: "추가 선택 권한 타이틀",
+                                    titleSub: "추가 선택 권한 설명"
                                 )],
                                 
                                // 접근권한 수동 변경 방법에 표시될 문구
-                               permissionSettingDesc: "앱 설정 위치",
+                               permissionSettingDesc: "'iOS 설정 > 라스트마일'에서 접근권한을 변경 할 수 있습니다.",
                                // 변경할 이미지 리스트 (Dictionary 형태, Permissions: 노출할 Icon text, 필수 값은 아니며 입력 없을 시 기본 아이콘 노출 됨
 //                               permissionImage: [Permissions.camera: "camera_test",
 //                                                 Permissions.photos: "photo_test",

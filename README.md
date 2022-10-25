@@ -14,6 +14,7 @@
 <img src="./ScreenShot/pulmuone_permisson.png" width="300px" title="pulmuone_permisson" align="top"/> 
 <img src="./ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
 <img src="./ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
+<img src="./ScreenShot/pulmuone_permission_example3.png" width="250px" title="pulmuone_permission_example3"/>
 
 > ### 디폴트 접근권한은 PermissionContent.swift에 정의되어 있습니다. 
 ```
@@ -102,19 +103,19 @@ let permissionContentView = PermissionContentView (popupState: popupState,
                         * permissionListNecessaryEtc, permissionListOptionalEtc 를 통해 정의 가능
                         */                               
                         permissionListNecessaryEtc: [
-                        PermissionItem(
-                            // 노출할 이미지 (asset 에 추가 되어 있어야 함.
-                            permissionImgString: "camera",
-                            titleMain: "메인 텍스트 1",
-                            titleSub: "서브 텍스트 2"
-                        )],
+                         PermissionItem(
+                            // 노출할 이미지 (asset 에 추가 되어 있어야 함.)
+                            permissionImgString: "camera", //PulmuonePermisson 그룹의 Assets에 추가한 권한 이미지명
+                            titleMain: "추가 필수 권한 타이틀",
+                            titleSub: "추가 필수 권한 설명"
+                         )],
                         permissionListOptionalEtc: [
-                        PermissionItem(
-                            // 노출할 이미지 (asset 에 추가 되어 있어야 함.
-                            permissionImgString: "contacts",
-                            titleMain: "메인 텍스트 1",
-                            titleSub: "서브 텍스트 2"
-                        )],
+                         PermissionItem(
+                            // 노출할 이미지 (asset 에 추가 되어 있어야 함.)
+                            permissionImgString: "contacts", //PulmuonePermisson 그룹의 Assets에 추가한 권한 이미지명
+                            titleMain: "추가 선택 권한 타이틀",
+                            titleSub: "추가 선택 권한 설명"
+                         )],
                         
                         // 접근권한 수동 변경 방법에 표시될 문구
                         permissionSettingDesc: "앱 설정 위치",
