@@ -26,6 +26,7 @@ public class BioManager : BioProtocol {
         var errorType: BioErrorType = BioErrorType.error
         var error: NSError?
         let authContext = LAContext()
+        authContext.localizedFallbackTitle = ""
         if authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
             if #available(iOS 11.0, *) {
                 switch authContext.biometryType {
@@ -94,6 +95,7 @@ public class BioManager : BioProtocol {
             closure(result)
         }else {
             let authContext = LAContext()
+            authContext.localizedFallbackTitle = ""
             authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: message) { (success, err) in
                 if(success) {
                     BioLog.log(success)
@@ -129,6 +131,7 @@ public class BioManager : BioProtocol {
             return
         }
         let authContext = LAContext()
+        authContext.localizedFallbackTitle = ""
         authContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: message) { (success, err) in
             if(success) {
                 closure(BioResult(success: true, errorType: BioErrorType.success))
