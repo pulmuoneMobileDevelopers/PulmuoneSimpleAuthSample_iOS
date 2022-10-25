@@ -22,7 +22,9 @@ extension Color {
     static let sub_title = Color(hex: 0x919BA5)//Color(red: 141 / 255, green: 141 / 255, blue: 141 / 255)
     static let divider = Color(red: 225 / 255, green: 230 / 255, blue: 235 / 255)
     
-    static let pulmuone_def = Color(red: 160 / 255, green: 217 / 255, blue: 17 / 255)
+//    static let pulmuone_def = Color(red: 160 / 255, green: 217 / 255, blue: 17 / 255)
+    static let pulmuone_def = Color(hex: 0xA0DA11)
+    static let pulmuone_pressed = Color(hex: 0x537B0A)
     static let icon_background = Color(hex: 0xF3F5F7)
     static let icon_foreground = Color(hex: 0x919BA5)
 }

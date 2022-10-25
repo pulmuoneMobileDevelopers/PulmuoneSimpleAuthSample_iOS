@@ -195,9 +195,7 @@ struct PermissionContent: View {
                 Text("확인").font(font).foregroundColor(Color.white)
                     .padding(.vertical, 15).frame(maxWidth: .infinity)
             })
-            .frame(maxWidth: .infinity)
-            .background(Color.pulmuone_def)
-            .padding(.bottom, 20)
+            .buttonStyle(CustomButtonStyle())
             
             
         }.padding(.horizontal, 20).padding(.vertical, 30)
@@ -217,6 +215,19 @@ struct PermissionContent: View {
     }
     
 }
+
+struct CustomButtonStyle: ButtonStyle {
+
+  func makeBody(configuration: Self.Configuration) -> some View {
+    configuration.label
+      .frame(maxWidth: .infinity)
+      .foregroundColor(.white)
+      .background(configuration.isPressed ? Color.pulmuone_pressed : Color.pulmuone_def)
+  }
+
+}
+
+
 struct PermissionContent_Previews: PreviewProvider {
     
     static var previews: some View {
