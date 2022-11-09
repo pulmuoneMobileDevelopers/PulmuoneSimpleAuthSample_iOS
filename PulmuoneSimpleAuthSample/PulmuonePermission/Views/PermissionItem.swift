@@ -34,7 +34,7 @@ struct PermissionItem: View {
                         .resizable()
                         .scaledToFit()
                         .font(Font.title.weight(.thin))
-                        .frame(width: 20, height: 20)
+                        .frame(width: 24, height: 24)
                         .aspectRatio(contentMode: .fill)
                         .foregroundColor(iconForegroundColor ?? Color.icon_foreground)
                 }
@@ -43,34 +43,36 @@ struct PermissionItem: View {
                 .background(iconBackgroundColor ?? Color.icon_background)
                 .clipShape(Circle())
 //            }
+            
             VStack (alignment: .leading, spacing: 0){
                 Text(permissionData.mainString)
                     .font(.custom("Pretendard-Medium", size: stringSize))
 //                    .font(.system(size: 14))
 //                    .fontWeight(.bold)
                     .foregroundColor(Color.title)
-                    .frame(height: 20)
+                    .frame(height: 24)
                 
                 Text(permissionData.subString)
-                    .font(.custom("Pretendard-Regular", size: stringSize))
+                    .font(.custom("Pretendard-Regular", size: 14))
 //                    .font(.system(size: 14))
 //                    .fontWeight(.bold)
                     .foregroundColor(Color.sub_title)
                     .frame(height: 20)
-            }
+            }.frame(height: itemHeight)
+                .padding(.leading, 4.0)
             Spacer()
-        }.frame(height: itemHeight)
-            .padding(.leading, 6.0)
+        }.frame(height: itemHeight).padding(.top, 8.0)
+
     }
     
     func getTextSize(textSize: TextSize?) -> CGFloat {
-        var returnSize: CGFloat = 14
-        if (textSize == .big) {
-            returnSize = 20
-        }
-        else if (textSize == .middle) {
-            returnSize = 17
-        }
+        var returnSize: CGFloat = 16
+//        if (textSize == .big) {
+//            returnSize = 20
+//        }
+//        else if (textSize == .middle) {
+//            returnSize = 18
+//        }
         return returnSize
     }
     
@@ -81,7 +83,7 @@ struct PermissionItem: View {
 //            itemHeight = 48
 //        }
         
-        return 48
+        return 45
     }
     
     func getLocaizedString(data: String) -> String {

@@ -89,7 +89,7 @@ struct PermissionContent: View {
                 
                 // title 변경 가능
                 Text(titleTxt ?? "앱 접근권한 안내")
-                    .font(.custom("Pretendard-Bold", size: 22))
+                    .font(.custom("Pretendard-SemiBold", size: 22))
                     //.fontWeight(.bold)
                     .foregroundColor(Color.title)
                     .frame(height: 53)
@@ -104,20 +104,20 @@ struct PermissionContent: View {
             ScrollView(.vertical, showsIndicators: false, content: {
                 //                ZStack{}.padding(.bottom, 10)//.background(Color.teal)
                 
-                Spacer().frame(height: 26)
+                Spacer().frame(height: 28)
                 
                 HStack {
                     
                     Text("필수적 접근권한")
                     //                        .font(.system(size: 18))
-                        .font(.custom("Pretendard-Bold", size: stringSize))
+                        .font(.custom("Pretendard-SemiBold", size: stringSize))
                         //.fontWeight(.bold)
                         .foregroundColor(Color.title)
                         .frame(height: 26, alignment: .leading)
                     //                        .background(Color.blue) // 영역 확인용
                     
                     Spacer()
-                }.padding(.bottom, 12)
+                }.padding(.bottom, 6)
                 
                 
                 ForEach(permissionListNecessary, id: \.self) { permissionData in
@@ -138,14 +138,14 @@ struct PermissionContent: View {
                     
                     Text("선택적 접근권한")
                     //                        .font(.system(size: 18))
-                        .font(.custom("Pretendard-Bold", size: stringSize))
+                        .font(.custom("Pretendard-SemiBold", size: stringSize))
                         //.fontWeight(.bold)
                         .foregroundColor(Color.title)
                         .frame(height: 26, alignment: .leading)
                     //                        .background(Color.blue) // 영역 확인용
                     
                     Spacer()
-                }.padding(.bottom, 10).padding(.top, 26)
+                }.padding(.bottom, 6).padding(.top, 28)
                 
                 ForEach(permissionListOptional, id: \.self) { permissionData in
                     PermissionItem(permission: permissionData,
@@ -164,19 +164,19 @@ struct PermissionContent: View {
                 HStack {
                     Text("접근권한 변경 방법")
                     //                        .font(.system(size: 18))
-                        .font(.custom("Pretendard-Bold", size: stringSize))
+                        .font(.custom("Pretendard-SemiBold", size: stringSize))
                         //.fontWeight(.bold)
                         .foregroundColor(Color.title)
                         .frame(height: 26, alignment: .leading)
                     //                        .background(Color.blue) // 영역 확인용
                     
                     Spacer()
-                }.padding(.bottom, 12).padding(.top, 26)
+                }.padding(.bottom, 12).padding(.top, 28)
                 
                 HStack {
                     Text(setPermissionChangeTitle ?? "설정 > 풀무원 앱 > 권한 설정 > 허용")
                     //                        .font(.system(size: 14))
-                        .font(.custom("Pretendard-Medium", size: stringSize - 4))
+                        .font(.custom("Pretendard-Medium", size: 16))
                         //.fontWeight(.bold)
                         .foregroundColor(Color.title)
                         .frame(alignment: .leading)
@@ -191,7 +191,7 @@ struct PermissionContent: View {
             Button(action: {
                 self.onConfirm()            
             }, label: {
-                let font = Font.custom("Pretendard-Bold", size: 18)//.weight(.semibold)
+                let font = Font.custom("Pretendard-SemiBold", size: 18)//.weight(.semibold)
                 Text("확인").font(font).foregroundColor(Color.white)
                     .padding(.vertical, 15).frame(maxWidth: .infinity)
             })
@@ -205,12 +205,12 @@ struct PermissionContent: View {
     
     func getTextSize(textSize: TextSize?) -> CGFloat {
         var returnSize: CGFloat = 18
-        if (textSize == .big) {
-            returnSize = 22
-        }
-        else if (textSize == .middle) {
-            returnSize = 20
-        }
+//        if (textSize == .big) {
+//            returnSize = 22
+//        }
+//        else if (textSize == .middle) {
+//            returnSize = 20
+//        }
         return returnSize
     }
     
