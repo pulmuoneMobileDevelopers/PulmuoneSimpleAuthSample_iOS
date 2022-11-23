@@ -1087,7 +1087,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PulmuoneSimpleAuthSample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PulmuoneSimpleAuth;
+				INFOPLIST_KEY_NSCameraUsageDescription = "~~~ 하기 위해서 카메라 사용을 허용합니다.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "생체인증을 위해 사용합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "~~~하기 위해서 사진 접근을 허용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1101,7 +1103,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulmuone.sampleauth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1124,7 +1126,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PulmuoneSimpleAuthSample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PulmuoneSimpleAuth;
+				INFOPLIST_KEY_NSCameraUsageDescription = "~~~ 하기 위해서 카메라 사용을 허용합니다.";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "생체인증을 위해 사용합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "~~~하기 위해서 사진 접근을 허용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1138,7 +1142,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pulmuone.simple-auth";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulmuone.sampleauth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
