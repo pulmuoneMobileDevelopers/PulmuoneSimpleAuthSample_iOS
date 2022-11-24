@@ -66,7 +66,7 @@ struct PermissionItem: View {
     }
     
     func getTextSize(textSize: TextSize?) -> CGFloat {
-        var returnSize: CGFloat = 16
+        let returnSize: CGFloat = 16
 //        if (textSize == .big) {
 //            returnSize = 20
 //        }
