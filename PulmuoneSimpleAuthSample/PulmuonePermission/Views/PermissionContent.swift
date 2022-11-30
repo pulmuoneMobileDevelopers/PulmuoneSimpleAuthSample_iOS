@@ -104,63 +104,71 @@ struct PermissionContent: View {
             ScrollView(.vertical, showsIndicators: false, content: {
                 //                ZStack{}.padding(.bottom, 10)//.background(Color.teal)
                 
-                Spacer().frame(height: 28)
                 
-                HStack {
+                if !permissionListNecessary.isEmpty ||
+                    (permissionListNecessaryEtc != nil && !permissionListNecessaryEtc!.isEmpty) {
                     
-                    Text("필수적 접근권한")
-                    //                        .font(.system(size: 18))
-                        .font(.custom("Pretendard-SemiBold", size: stringSize))
+                    Spacer().frame(height: 28)
+                    
+                    HStack {
+                        
+                        Text("필수적 접근권한")
+                        //                        .font(.system(size: 18))
+                            .font(.custom("Pretendard-SemiBold", size: stringSize))
                         //.fontWeight(.bold)
-                        .foregroundColor(Color.title)
-                        .frame(height: 26, alignment: .leading)
-                    //                        .background(Color.blue) // 영역 확인용
+                            .foregroundColor(Color.title)
+                            .frame(height: 26, alignment: .leading)
+                        //                        .background(Color.blue) // 영역 확인용
+                        
+                        Spacer()
+                    }.padding(.bottom, 6)
                     
-                    Spacer()
-                }.padding(.bottom, 6)
-                
-                
-                ForEach(permissionListNecessary, id: \.self) { permissionData in
-                    PermissionItem(permission: permissionData,
-                                   permissionImgString: permissionImage?[permissionData],
-                                   iconForegroundColor: iconForegroundColor,
-                                   iconBackgroundColor: iconBackgroundColor,
-                                   textSize: textSize,
-                                   isNecessary: true)
+                    
+                    ForEach(permissionListNecessary, id: \.self) { permissionData in
+                        PermissionItem(permission: permissionData,
+                                       permissionImgString: permissionImage?[permissionData],
+                                       iconForegroundColor: iconForegroundColor,
+                                       iconBackgroundColor: iconBackgroundColor,
+                                       textSize: textSize,
+                                       isNecessary: true)
+                    }
+                    
+                    let cntNec: Int = permissionListNecessaryEtc?.count ?? 0
+                    ForEach(0..<cntNec, id: \.self) { num in
+                        permissionListNecessaryEtc?[num]
+                    }
                 }
                 
-                let cntNec: Int = permissionListNecessaryEtc?.count ?? 0
-                ForEach(0..<cntNec, id: \.self) { num in
-                    permissionListNecessaryEtc?[num]
-                }
                 
-                HStack {
-                    
-                    Text("선택적 접근권한")
-                    //                        .font(.system(size: 18))
-                        .font(.custom("Pretendard-SemiBold", size: stringSize))
+                if !permissionListOptional.isEmpty ||
+                    (permissionListOptionalEtc != nil && !permissionListOptionalEtc!.isEmpty) {
+                    HStack {
+                        
+                        Text("선택적 접근권한")
+                        //                        .font(.system(size: 18))
+                            .font(.custom("Pretendard-SemiBold", size: stringSize))
                         //.fontWeight(.bold)
-                        .foregroundColor(Color.title)
-                        .frame(height: 26, alignment: .leading)
-                    //                        .background(Color.blue) // 영역 확인용
+                            .foregroundColor(Color.title)
+                            .frame(height: 26, alignment: .leading)
+                        //                        .background(Color.blue) // 영역 확인용
+                        
+                        Spacer()
+                    }.padding(.bottom, 6).padding(.top, 28)
                     
-                    Spacer()
-                }.padding(.bottom, 6).padding(.top, 28)
-                
-                ForEach(permissionListOptional, id: \.self) { permissionData in
-                    PermissionItem(permission: permissionData,
-                                   permissionImgString: permissionImage?[permissionData],
-                                   iconForegroundColor: iconForegroundColor,
-                                   iconBackgroundColor: iconBackgroundColor,
-                                   textSize: textSize,
-                                   isNecessary: true)
-                }// 기존 디자인이 필수 접근권한과 달랐지만, 동일하게 바뀜.
-                
-                let cntOpt: Int = permissionListOptionalEtc?.count ?? 0
-                ForEach(0..<cntOpt, id: \.self) { num in
-                    permissionListOptionalEtc?[num]
+                    ForEach(permissionListOptional, id: \.self) { permissionData in
+                        PermissionItem(permission: permissionData,
+                                       permissionImgString: permissionImage?[permissionData],
+                                       iconForegroundColor: iconForegroundColor,
+                                       iconBackgroundColor: iconBackgroundColor,
+                                       textSize: textSize,
+                                       isNecessary: true)
+                    }// 기존 디자인이 필수 접근권한과 달랐지만, 동일하게 바뀜.
+                    
+                    let cntOpt: Int = permissionListOptionalEtc?.count ?? 0
+                    ForEach(0..<cntOpt, id: \.self) { num in
+                        permissionListOptionalEtc?[num]
+                    }
                 }
-                
                 HStack {
                     Text("접근권한 변경 방법")
                     //                        .font(.system(size: 18))
@@ -184,7 +192,6 @@ struct PermissionContent: View {
                     Spacer()
                 }
                 .padding(.bottom, 38)
-                
             })
             
             // https://eunjin3786.tistory.com/232 참조하여 처리.
