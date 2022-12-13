@@ -41,6 +41,8 @@ class PasscodeViewController: PmoViewController {
     private var notMatch: ((_ notMatchCallback: Int) -> Void)?
     private var notMatchCount = 0
     private var isMatchSuccess = false
+    
+    private let ALL_CLEAR = 100 //초기화 버튼
    
     class func instance(with mode: Mode) -> PasscodeViewController? {
         let vc = UIStoryboard.init(name: "Passcode", bundle: Bundle.main).instantiateViewController(withIdentifier: "kPasscodeViewController") as? PasscodeViewController
@@ -173,7 +175,7 @@ class PasscodeViewController: PmoViewController {
     
     private func numberTapped(_ number: Int) {
         log.verbose("numberTapped: pincode: \(String(describing: pincode)), number: \(number)")
-        if number == 9 {
+        if number == ALL_CLEAR {
             // Enable fingerprint scan
             //showBioMetric()
             log.verbose("초기화 버튼 터치")
@@ -447,8 +449,9 @@ extension PasscodeViewController: UICollectionViewDelegate, UICollectionViewData
 //        }
         //  private var keyValues = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
         print("collectionView: indexPath.row: \(indexPath.row)")
-        if indexPath.row == 9 { // 7아래 공백
-            numberTapped(indexPath.row)
+        if indexPath.row == 9 { // 7아래 공백 (초기화)
+            //numberTapped(indexPath.row)
+            numberTapped(100)
         } else if indexPath.row == 11 { //백스페이스
             numberTapped(indexPath.row)
         } else if indexPath.row == 10 { //숫자 0
