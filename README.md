@@ -554,3 +554,5 @@ end
 <img src="./ScreenShot/pincode2.png" width="250px" title="pincode" align="top"/> 
 <img src="./ScreenShot/pulmuone_permission_example1.png" width="250px" title="pulmuone_permission_example1"/>
 <img src="./ScreenShot/pulmuone_permission_example2.png" width="250px" title="pulmuone_permission_example2"/>
+
+Hjkimf has been come in!
